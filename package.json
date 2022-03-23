@@ -1,0 +1,30 @@
+{
+  "name": "our-project-2",
+  "version": "1.0.0",
+  "description": "a casino",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonjayoo/Our-Project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonjayoo/Our-Project-2/issues"
+  },
+  "homepage": "https://github.com/jasonjayoo/Our-Project-2#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.2",
+    "decrypt": "^0.0.1",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
+    "mailer": "^0.6.7",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  }
+}
