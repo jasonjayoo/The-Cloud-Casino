@@ -1,1 +1,2 @@
-drop database etc.
+DROP DATABASE IF EXISTS casino_db;
+CREATE DATABASE casino_db;
