@@ -1,0 +1,41 @@
+<br>
+<div class="card m-3 border-info" style="max-width: 36rem;" id="info-display">
+    <label class="d-block py-2 px-3 text-white bg-info">Sign Up</label>
+    <form id="sign-up-form" class="m-2">
+        <div class="form-group">
+            <label class="p-2 text-info">Username</label>
+            <input type="text" class="form-control p-2" id="new-user-name" >
+            <div id="available-username"></div>
+        </div>
+        <div class="form-group">
+            <label class="p-2 text-info">Email</label>
+            <input type="text" class="form-control p-2" id="new-email">
+        </div>
+        <div class="form-group">
+            <label class="p-2 text-info">Password</label>
+            <input type="password" class="form-control" id="new-password">
+        </div>
+        <button type="submit" id="sign-up" class="btn btn-success my-3">Sign Up</button>
+        <br>
+        <a href="/login"><label class="px-1 pb-2"><u>Login Instead</u></label></a>
+    </form>
+</div>
+<div class="card m-3 border-info" style="max-width: 36rem; display: none;" id="verify-display" >
+    <label class="d-block py-2 px-3 text-white bg-info">Verify Email</label>
+    <form id="verify-form" class="m-2">
+        <div class="form-group">
+            <label class="p-2 text-info">Enter the verification code sent to your Email address</label>
+            <input type="text" class="form-control p-2" id="verify-code">
+        </div>
+        
+        <button type="submit" id="verify" class="btn btn-success my-3">Verify</button>
+        <br>
+        
+    </form>
+</div>
+
+
+
+
+
+<script src='/js/signup.js'></script>
