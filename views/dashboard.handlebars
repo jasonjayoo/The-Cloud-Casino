@@ -1,0 +1,9 @@
+{{!-- for each post by userid, render the posts --}}
+
+{{#each posts as |post|}}
+{{> post-details}}
+{{/each}}
+
+<button id='newPost' class='btn btn-success mx-3'>Add New Post</button>
+
+<script src="/js/dashboard.js"></script>

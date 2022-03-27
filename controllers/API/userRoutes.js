@@ -2,7 +2,29 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 
-router.get('')
+//verify that name is unique
+router.get('/check/:id', async(req,res)=>{
+
+    try{
+        const Aname = await User.findOne({ where: { name: req.params.id }});
+        if(!Aname) {
+            res.status(200).json({ message: 'fukfuk' });
+            return;
+        }
+        else {
+            res.status(298).json({ message: 'fukaaaaaafuk' });
+            return;
+        }
+    }catch(err){
+        res.status(500).json({ message: 'ferrrrork' });
+        console.log(err);
+        return;
+        
+    }
+
+});
+
+
 //SIGNUP NEW USER - WORKS
 router.post('/signup', async (req, res) => {
     try {
