@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
             return post;
         });
         res.render('home', {
-            pageTitle: "The Tech Blog",
+            pageTitle: "The Cloud Casino",
             loggedIn: req.session.logged_in,
             posts
         });
@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 //RENDER SIGNUP PAGE
 router.get('/signup', async (req, res) => {
     try {
-        res.render('signup', { pageTitle: "The Tech Blog" });
+        res.render('signup', { pageTitle: "The Cloud Casino" });
     }
     catch (err) {
         console.log(err);
@@ -38,7 +38,7 @@ router.get('/signup', async (req, res) => {
 //RENDER LOGIN PAGE
 router.get('/login', async (req, res) => {
     try {
-        res.render('login', { pageTitle: "The Tech Blog" });
+        res.render('login', { pageTitle: "The Cloud Casino" });
     }
     catch (err) {
         console.log(err);
