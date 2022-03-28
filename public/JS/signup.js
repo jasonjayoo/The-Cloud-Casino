@@ -1,85 +1,52 @@
-const ipUrl = 'http://ip-api.com/json/?fields=query'
-const fetch = require('node-fetch');
-
-let ip,email,name,password,code;
-let takenNames = [];
-
-warning = document.querySelector('#available-username');//display available/not available
-
-//TO DO 
-//get all existing usernames takenNames[]
-//while change in text entry form if name exists display in red "username not available"
-//else display in green "username available"
-
-//TO DO 
-//get verif code (from database? or from here?)
-//maybe need back and forth
+warning = document.getElementById('available-username');
 
 
-
-//get ip address, executes faster than signup process.
-fetch(ipUrl).then(function (response) {
-    return response.json();
-}).then((data)=> {
-    ip = data.query;
-});
+async function verifyName(){
+    console.log("yo");
+    
 
 
-function verifyName(){
-    name = document.querySelector('#new-user-name').value;
-    if (takenNames.length>0){
-        for(let i=0; i<takenNames.length; i++){
-            if(name==takenNames[i]){
-                warning.style.color= "red";
-                warning.innerText = "username not available";
-                return;
-            }
+    let name = document.getElementById('new-user-name').value;
+
+    if (name==""){
+        warning.style.color= "black";
+        warning.innerText = "Choose a cool name like Keith or Thunderbullion";
+    }
+    else{
+
+        const AA = await fetch(`/api/user/check/${name}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        });
+
+        console.log(Response);
+        console.log(AA);
+        console.log(AA.status);
+        if (AA.status==200 ) {
+            console.log("200");
+            warning.style.color= "green";
+            warning.innerText = "username available";
+        } else {//status == 298
+            console.log("298");
+            warning.style.color= "red";
+            warning.innerText = "username not available";
         }
-        warning.style.color= "green";
-        warning.innerText = "username available";
-        return;
-    }else return;
+    }
+    return;
+
 }
 
-
-
-async function getInfo(event){
-
+async function newFormHandler(event){
     event.preventDefault();
-
-    //get info
-    email = document.querySelector('#new-email').value;
-    name = document.querySelector('#new-user-name').value;
-    password = document.querySelector('#new-password').value;
-
-    //hide info form, display verify form
-    document.getElementById("info-display").style.display = "none";
-    document.getElementById("verify-display").style.display = "block";
-
-    //TO DO
-    //Send Email with verif code
-
-
-   
-}
-
-
-async function verifyCode(event){
-
-    event.preventDefault();
-
-    code = document.querySelector('#verify-code').value;
-
-
-
-
+    const name = document.querySelector('#new-user-name').value;
+    const password = document.querySelector('#new-password').value;
     const response = await fetch('/api/user/signup', {
         method: 'POST',
         body: JSON.stringify({
             name,
-            password,
-            email,
-            ip
+            password
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -90,10 +57,7 @@ async function verifyCode(event){
     } else {
         alert('Failed to add new user')
     }
-
 }
 
-document.querySelector('#new-user-name').addEventListener('oninput',verifyName);
-document.querySelector('#sign-up-form').addEventListener('submit', getInfo);
-document.querySelector('#verify-form').addEventListener('submit', verifyCode);
-
+document.querySelector('#sign-up-form').addEventListener('submit', newFormHandler);
+document.querySelector('#new-user-name').addEventListener('input',verifyName);
