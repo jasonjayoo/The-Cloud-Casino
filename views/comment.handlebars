@@ -1,0 +1,25 @@
+<br>
+<div class="card m-3 border-info">
+    <div class="card-header d-flex justify-content-between bg-info text-white">
+        <h5 class="mt-1 mb-1">{{post.title}}</h5>
+        <p class="mt-1 mb-1">Posted by {{post.author}} on {{post.date_created}}</p>
+    </div>
+    <div class="card-body">
+        <p class="card-text text-info">{{post.content}}</p>
+    </div>
+</div>
+<br>
+<div class="accordion" id="accordionExample">
+{{#each post.comments as |comment|}}
+{{> comment-details parent=..}}
+{{/each}}
+</div>
+<br>
+<form id="comment">
+    <div class="form-group">
+        <label class="py-2 px-3 text-info" for="exampleFormControlTextarea1"><b>Comment</b></label>
+        <textarea class="form-control mx-3" id="comment-content" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success m-3">Post Comment</button>
+</form>
+<script src='/js/comment.js'></script>

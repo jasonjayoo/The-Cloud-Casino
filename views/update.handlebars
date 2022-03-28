@@ -1,0 +1,15 @@
+<br>
+<div class="form-group">
+    <label class="py-2 px-3 text-info" for="exampleFormControlInput1"><b>Title</b></label>
+    <input value="{{post.title}}" type="text" class="form-control mx-3" id="post-title" style="max-width: 36rem;">
+</div>
+<div class="form-group">
+    <label class="py-2 px-3 text-info" for="exampleFormControlTextarea1"><b>Content</b></label>
+    <textarea class="form-control mx-3" id="post-content" style="max-width: 36rem;" rows="3">{{post.content}}</textarea>
+</div>
+<div class="d-flex justify-content-start mt-3">
+    <button id="update-post" type="submit" class="btn btn-success mx-3">Update</button>
+    <button id="delete-post" class="btn btn-danger mx-3">Delete</button>
+</div>
+
+<script src='/js/update.js'></script>
