@@ -1,6 +1,6 @@
-# The-Tech-Blog
+# The Cloud Casino
 
-(Homework - 14: Model-View-Controller (MVC): Tech Blog)
+(Project-2; Interactive Full-Stack Application)
 
 
 <br>
@@ -11,10 +11,29 @@
 
 ## Description:
 
-Build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers' posts as well. Built completely from scratch and deployed through heroku. Application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language. Sequelize as the ORM, and express-session npm package for authentication. 
+An online casino where users will have to create an account to log in to play Roulette in order to win chips. 
 
 <br>
 
+## User Story:
+
+I love gambling but I dont want to lose money. I want a program that can recreate the experience of gambling without actually risking my money. I get virtual money from winning games and I lose money when I lose games. Therefor I get the experience of possibly losing or winning money just how a real gambling experience is. If I run out of virtual money I have to watch a short video to acquire more virtual money. If i win enough money I will unlock an achivement status that will allow me to access other functionalities (higher limit tables, VIP Rooms, other games, etc.).
+
+<br>
+
+## Acceptance Criteria:
+
+-User must create a original username and password<br>
+-This creates an account that is linked to their IP address and verified email address(confirmation code sent via email)<br>
+-User must authenticate themselves via verification code that will be sent to their email<br>
+-User starts the game with 1,000 chips(1 chip = $1-not real money)<br>
+-User can bet a minimum $5 and a maximum of $100<br>
+-If the user runs out of coins they will have to watch a short video to gain more coins<br>
+-If user wins 250 chips they will unlock the next level where user minimum is 50 and maximum is 250<br>
+-User can win from rookie table, beginner table, veteran table, VIP table, and finally highroller table<br>
+-If user is finished playing they can save their current chips and log out<br>
+
+<br>
 
 ## Table of contents:
 
@@ -25,7 +44,7 @@ Build a CMS-style blog site similar to a Wordpress site, where developers can pu
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Credits](#credits)
-  * [Author](#author)
+  * [Authors](#authors)
   * [Questions](#questions)
 
 <br>
@@ -110,7 +129,7 @@ Once downloaded, open the file in VS Code.
   
 ## Contributions:
 <br>
-Reach me at my email provided below to be added as a contributor.
+Reach us at our github provided below
 
 <br>
 <br>
@@ -124,18 +143,15 @@ Install MySQL to your computer. You will also need to have installed MySQL to yo
 
 ## Credits:
 <br>
-Much thanks to my brilliant tutor Mr. Faran Navazi for helping me work through several errors that occurred during the development of this application.
 
-<br>
-<br>
-
-Also, much thanks to BCS Learning Assistants for getting me through some of the challenges of developing this application and deploying it. 
 
 <br>
 
-## Author:
+## Authors:
+
 <br>
-Jason Yoo
+
+[jasonjayoo](https://github.com/jasonjayoo)<br> [BroBrett](https://github.com/BroBrett)<br> [nialvo](https://github.com/nialvo)
   
 <br>
 <br>
