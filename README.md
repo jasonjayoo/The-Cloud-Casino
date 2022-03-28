@@ -11,27 +11,27 @@
 
 ## Description:
 
-An online casino where users will have to create an account to log in to play Roulette in order to win chips. 
+An online casino where users will have to create an account to login in order to play Roulette and win chips. 
 
 <br>
 
 ## User Story:
 
-I love gambling but I dont want to lose money. I want a program that can recreate the experience of gambling without actually risking my money. I get virtual money from winning games and I lose money when I lose games. Therefor I get the experience of possibly losing or winning money just how a real gambling experience is. If I run out of virtual money I have to watch a short video to acquire more virtual money. If i win enough money I will unlock an achivement status that will allow me to access other functionalities (higher limit tables, VIP Rooms, other games, etc.).
+I like gambling but I dont like losing my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I get virtual money from winning and lose money when I lose. Therefore, I get the experience of possibly losing or winning money just like how a real gambling is without actually losing real money. If I run out of virtual money I have to watch a short video to acquire more virtual money. If i win enough money I will unlock different achivement status that will allow me to access other functionalities (higher limit tables, VIP Rooms, other games, etc.).
 
 <br>
 
 ## Acceptance Criteria:
 
--User must create a original username and password<br>
--This creates an account that is linked to their IP address and verified email address(confirmation code sent via email)<br>
--User must authenticate themselves via verification code that will be sent to their email<br>
--User starts the game with 1,000 chips(1 chip = $1-not real money)<br>
--User can bet a minimum $5 and a maximum of $100<br>
+-Users must create a original username and password <br>
+-This creates an account that is linked to their IP address and verified email address(confirmation code sent via email) <br>
+-Users must authenticate themselves via verification code that will be sent to their email<br>
+-Users starts the game with 1,000 chips(1 chip = 1 dollar - "NOT REAL MONEY")<br>
+-Users can bet a minimum 5 chips and a maximum of 100 chips in the initial rookie table<br>
 -If the user runs out of coins they will have to watch a short video to gain more coins<br>
 -If user wins 250 chips they will unlock the next level where user minimum is 50 and maximum is 250<br>
--User can win from rookie table, beginner table, veteran table, VIP table, and finally highroller table<br>
--If user is finished playing they can save their current chips and log out<br>
+-User can win from rookie table (min 50-max 250), beginner table (min 100 - max 500), veteran table (min 200 - max 1000), VIP table (min 500 - max 2500), and finally highroller table (min 1000 - max 10000)<br>
+-If the user is finished playing they can save their current chips count and log out<br>
 
 <br>
 
@@ -160,6 +160,6 @@ Install MySQL to your computer. You will also need to have installed MySQL to yo
 
   For any questions regarding this application, you may reach me directly at jasonjayoo@outlook.com.
 
-  To view my other applications, please check out my github page [jasonjayoo](https://github.com/jasonjayoo).
+  To view our other applications, please check out our github pages [jasonjayoo](https://github.com/jasonjayoo), [BroBrett](https://github.com/BroBrett), [nialvo](https://github.com/nialvo).
 
 
