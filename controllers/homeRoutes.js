@@ -144,4 +144,22 @@ router.get('/comment/:id', async (req, res) => {
     }
 });
 
+//some stuff above this line will eventually get deleted//////////////////////////////////////////////////////////////////
+
+
+//RENDER ROULETTE1 PAGE
+router.get('/roulette1', async (req, res) => {
+    try {
+        res.render('roulette1', {
+            pageTitle: "Roulette 4 Plebs",
+            loggedIn: req.session.logged_in
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+});
+
+
 module.exports = router;

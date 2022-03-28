@@ -1,0 +1,23 @@
+
+.r{
+    border-radius: 5px;
+	border: 12px solid rgb(209, 180, 13);
+	
+	
+}
+
+.loader{
+	display:none;
+}
+/*
+canvas, button{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-top:20px;
+	font-size:50px;
+}
+
+
+*/
+
