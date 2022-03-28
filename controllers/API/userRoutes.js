@@ -8,15 +8,15 @@ router.get('/check/:id', async(req,res)=>{
     try{
         const Aname = await User.findOne({ where: { name: req.params.id }});
         if(!Aname) {
-            res.status(200).json({ message: 'fukfuk' });
+            res.status(200).json({ message: 'hi' });
             return;
         }
         else {
-            res.status(298).json({ message: 'fukaaaaaafuk' });
+            res.status(298).json({ message: 'hello' });
             return;
         }
     }catch(err){
-        res.status(500).json({ message: 'ferrrrork' });
+        res.status(500).json({ message: 'ok' });
         console.log(err);
         return;
         
