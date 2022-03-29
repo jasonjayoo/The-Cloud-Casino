@@ -1,11 +1,21 @@
 
 .r{
     border-radius: 5px;
-	border: 12px solid rgb(209, 180, 13);
+	border: 1px solid rgb(209, 180, 13);
+	
 	
 	
 }
 
+
+#betButtons btn{
+	color:red;
+}
+
+
+#b1{
+	color:red;
+}
 .loader{
 	display:none;
 }
@@ -16,6 +26,7 @@ canvas, button{
   	margin-right: auto;
 	margin-top:20px;
 	font-size:50px;
+	
 }
 
 
