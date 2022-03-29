@@ -1,0 +1,41 @@
+#mainbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#home {
+    font-size: 25px;
+    font-weight: 475;
+}
+
+#casino {
+    font-size: 25px;
+    margin-left: 2px;
+    font-weight: 475;
+
+}
+
+#activelogin {
+    font-size: 25px;
+    font-weight: 475;
+}
+
+#logout {
+    font-size: 25px;
+    font-weight: 475;
+}
+
+#inactivelogin{
+    font-size: 25px;
+    font-weight: 475;
+}
+
+#homepage {
+    font-weight: 550;
+}
+
+#moneyrain {
+    margin-top: 25px;
+    width: 50vh
+}
