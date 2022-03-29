@@ -3,7 +3,7 @@ async function newPost (event){
     document.location.replace('/create');
 }
 
-document.querySelector('#newPost').addEventListener('click', newPost);
+// document.querySelector('#newPost').addEventListener('click', newPost);
 
 //above this line will eventually be deleted
 

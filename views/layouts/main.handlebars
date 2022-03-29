@@ -1,7 +1,9 @@
 <html>
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,7 +21,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success" id="mainbar">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainbar">
       <div>
         <div class="container-fluid">
           <button
@@ -91,11 +93,34 @@
         class="border rounded border-3 border-success px-3 py-2 text-success d-inline"
         id="homepage">{{pageTitle}}</h1>
     </div>
-    <div class="text-center" id="mainimage">
-                      <img src="money-rain.png" alt="Money Rain" title="Money Rain" id="moneyrain">
-    </div>
 
-    {{{body}}}
+  {{!-- <style>
+  body {
+  background-image:url("money-rain.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 60%;
+
+  }
+  </style> --}}
+
+    <style>
+  nav {
+  background-image:url("casinofloor1.jpg");
+
+  background-size: contain;
+
+  }
+  </style>
+
+    {{!-- <div class="text-center" id="mainimage">
+                      <img src="money-rain.png" alt="Money Rain" title="Money Rain" id="moneyrain">
+    </div> --}}
+<div class="d-flex justify-content-center">
+ {{{body}}}
+
+</div>
+   
 
     <script src="/js/logout.js"></script>
   </body>
