@@ -1,3 +1,19 @@
+/* #mainimage {
+    position: relative;
+}
+
+#moneyrain {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#body {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
 #mainbar {
     padding-top: 20px;
     padding-bottom: 20px;
