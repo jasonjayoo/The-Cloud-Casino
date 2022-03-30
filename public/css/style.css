@@ -14,11 +14,11 @@
     left: 0;
 } */
 
-/* body {
-    background-image:url("images/money-rain.png");
+body {
+    background-image:url("money-rain.png");
     background-repeat: no-repeat;
     background-position: center center;
-} */
+}
 
 /* nav {
     background-image: url('/images/casinofloor1.jpg');
@@ -60,6 +60,7 @@
 
 #homepage {
     font-weight: 550;
+
 }
 
 #moneyrain {
@@ -73,6 +74,10 @@
 
 #signupcard {
     width: 55vh;
+}
+
+#maincard {
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 777px) {
