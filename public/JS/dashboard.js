@@ -7,9 +7,9 @@ async function newPost (event){
 
 //above this line will eventually be deleted
 
-async function rouletteOne (event){
+async function diceFive (event){
     event.preventDefault();
-    document.location.replace('/roulette1');
+    document.location.replace('/dice5');
 }
 
-document.querySelector('#roulette1').addEventListener('click', rouletteOne);
+document.querySelector('#dice5').addEventListener('click', diceFive);

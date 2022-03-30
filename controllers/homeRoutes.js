@@ -147,11 +147,11 @@ router.get('/comment/:id', async (req, res) => {
 //some stuff above this line will eventually get deleted//////////////////////////////////////////////////////////////////
 
 
-//RENDER ROULETTE1 PAGE
-router.get('/roulette1', async (req, res) => {
+//RENDER DICE5 PAGE
+router.get('/dice5', async (req, res) => {
     try {
-        res.render('roulette1', {
-            pageTitle: "Roulette 4 Plebs",
+        res.render('dice5', {
+            pageTitle: "$5 Dice",
             loggedIn: req.session.logged_in
         });
     }

@@ -22,6 +22,11 @@ User.init(
             allowNull: false,
             unique: true
         },
+        coins: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            unique: false
+        },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
