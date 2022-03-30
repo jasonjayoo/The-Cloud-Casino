@@ -29,7 +29,12 @@ router.get('/check/:id', async(req,res)=>{
 router.post('/signup', async (req, res) => {
     try {
         console.log(req.body)
-        const userData = await User.create(req.body);
+        let Body = {
+            name: req.body.name,
+            password: req.body.password,
+            coins: 5000
+        }
+        const userData = await User.create(Body);
         
 
         req.session.save(() => {

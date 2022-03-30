@@ -34,6 +34,8 @@ for (let i=0; i<6; i++){
     */
 }
 
+let die;
+let coins = 5000;
 
 
 
@@ -54,9 +56,11 @@ function placeBet(event){
 
         let b = event.target.value;
         
-        
+        playDice(b,5);
+        /*
         console.log(b);
 ////need to replace this with a proper timer function
+
         for (let k=0; k<100; k++){
             ctx.drawImage(midice[Math.floor(Math.random() * 6)],0,0,450,447, 0,0,unit,unit);
             x=Math.floor(Math.random() * 6)+1
@@ -67,12 +71,37 @@ function placeBet(event){
 
 
         
-
+*/
         
         return;
     }
 }
 
+
+async function playDice(bet,sum){
+    
+    
+    const game = await fetch('/api/game/dice', {
+        method: 'PUT',
+        body: JSON.stringify({
+            bet,
+            sum
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    });
+    if (game.ok) {
+        game.json().then(data => {
+            console.log(data);
+        });
+        //die=game.die;
+        //coins = game.bank;
+        //celebrate(game.win);
+    }else{
+        console.log('Houston we have a problemerino')
+    }
+}
 
 
 
