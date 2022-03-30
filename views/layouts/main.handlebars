@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="mainbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" id="mainbar">
       <div>
         <div class="container-fluid">
           <button
@@ -90,7 +90,7 @@
     <br />
     <div class="m-3 text-center">
       <h1
-        class="border rounded border-3 border-success px-3 py-2 text-success d-inline"
+        class="border rounded border-2 border-info px-3 py-2 text-info d-inline"
         id="homepage">{{pageTitle}}</h1>
     </div>
 
@@ -105,10 +105,12 @@
   </style> --}}
 
     <style>
-  nav {
-  background-image:url("casinofloor1.jpg");
-
-  background-size: contain;
+  body {
+  background-image:url("casinodice.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
 
   }
   </style>
@@ -116,7 +118,7 @@
     {{!-- <div class="text-center" id="mainimage">
                       <img src="money-rain.png" alt="Money Rain" title="Money Rain" id="moneyrain">
     </div> --}}
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center" id="maincard">
  {{{body}}}
 
 </div>
