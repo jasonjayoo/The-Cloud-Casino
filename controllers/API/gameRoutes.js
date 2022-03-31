@@ -1,6 +1,28 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+router.get('/money',async (req,res) =>{
+
+    try {
+
+        if (!req.session.logged_in) {
+            res.status(401).json("User is not logged in");
+            return
+        }else{
+            const bank = await User.findByPk(req.session.user_id);
+            let total = bank.coins;
+
+            res.status(200).json({coins:total});
+        }
+    }catch(err){
+        console.log(err);
+        res.status(400);
+    }
+
+
+
+})
+
 
 router.put('/dice', async (req, res) => {
     try {
