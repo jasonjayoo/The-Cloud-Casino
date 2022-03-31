@@ -34,7 +34,7 @@ router.put('/dice', async (req, res) => {
             const bank = await User.findByPk(req.session.user_id);
 
             let D = Math.floor(Math.random() * 6)+1;//roll the die
-            let B = req.body.bet;//get the user's bet (1, 2, 3, 4, 5, 6, even or odd as a string)
+            let B = req.body.choice;//get the user's bet (1, 2, 3, 4, 5, 6, even or odd as a string)
             let winLose;//outcome of game, true if the user wins
             let sum = req.body.sum;//sum of money the user is betting
             let total = bank.coins;//total money available to the user
@@ -83,7 +83,7 @@ router.put('/dice', async (req, res) => {
             
 
 
-            res.status(200).json({bet:B, dice:D, win:winLose, coins:total});
+            res.status(200).json({dice:D, win:winLose, coins:total});
 
             
 

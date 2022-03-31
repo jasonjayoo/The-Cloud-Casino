@@ -161,5 +161,19 @@ router.get('/dice5', async (req, res) => {
     }
 });
 
+//RENDER DICE5 PAGE
+router.get('/dice10', async (req, res) => {
+    try {
+        res.render('dice10', {
+            pageTitle: "$10 Dice",
+            loggedIn: req.session.logged_in
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+});
+
 
 module.exports = router;

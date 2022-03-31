@@ -101,13 +101,13 @@ function placeBet(event){
 }
 
 
-async function playDice(bet,sum){
+async function playDice(choice,sum){
     
     
     const game = await fetch('/api/game/dice', {
         method: 'PUT',
         body: JSON.stringify({
-            bet,
+            choice,
             sum
         }),
         headers: {
