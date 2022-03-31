@@ -13,3 +13,10 @@ async function diceFive (event){
 }
 
 document.querySelector('#dice5').addEventListener('click', diceFive);
+
+async function diceTen (event){
+    event.preventDefault();
+    document.location.replace('/dice10');
+}
+
+document.querySelector('#dice10').addEventListener('click', diceTen);

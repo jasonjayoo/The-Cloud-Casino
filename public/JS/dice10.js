@@ -1,10 +1,30 @@
 
 const canvas = document.getElementById("viewScreen");
 const ctx = canvas.getContext("2d");
+let rolling; //to store setInterval function for display of rolling dice
 
 const chips = document.getElementById("chips");
 const yourBet = document.getElementById("yourBet");
 getMyMoney();
+
+
+//functions for animation
+
+function startRolling() {rolling = setInterval(roll, 80);}
+function R1() {ctx.drawImage(midice[Math.floor(Math.random() * 6)],0,0,unit,unit);}
+function R2() {ctx.drawImage(dice[Math.floor(Math.random() * 6)],0,0,unit,unit);}
+function roll() {
+    R1();
+    setTimeout(R2,40);
+}
+function stopRolling(A) {
+    clearInterval(rolling);
+    rolling = null; 
+}
+
+
+
+
 async function getMyMoney(){
     const myMoney = await fetch('/api/game/money', {
         method: 'GET',
@@ -39,23 +59,21 @@ console.log(typeof unit);
 
 let dice = [new Image(),new Image(),new Image(),new Image(),new Image(),new Image()];
 let midice = [new Image(),new Image(),new Image(),new Image(),new Image(),new Image()];
+let winPic = new Image();
+let losePic = new Image();
 
 dice[0].onload = function () {
     ctx.clearRect(0,0,u,u);
     ctx.drawImage(dice[0],0,0,unit,unit);//draw board
 }
 
-
 for (let i=0; i<6; i++){
     dice[i].src= `${i+1}.png`;
     midice[i].src= `m${i+1}.png`;
-/*
-    dice[i].width=`${unit}px`;
-    dice[i].height=`${unit}px`;
-    midice[i].width=`${unit}px`;
-    midice[i].height=`${unit}px`;
-    */
 }
+
+winPic.src = `win.png`;
+losePic.src = `lose.png`;
 
 
 
@@ -72,6 +90,7 @@ bet.addEventListener('click',placeBet);
 let x = 0;
 //when a bet is placed
 function placeBet(event){
+    bet.removeEventListener('click',placeBet);//disable buttons
 
     if(!event.target.value) return;//if they click between the buttons
     else{
@@ -79,7 +98,7 @@ function placeBet(event){
         let b = event.target.value;
         yourBet.innerHTML=b;
         
-        playDice(b,5);
+        playDice(b,10);
         /*
         console.log(b);
 ////need to replace this with a proper timer function
@@ -101,13 +120,13 @@ function placeBet(event){
 }
 
 
-async function playDice(bet,sum){
+async function playDice(choice,sum){
     
     
     const game = await fetch('/api/game/dice', {
         method: 'PUT',
         body: JSON.stringify({
-            bet,
+            choice,
             sum
         }),
         headers: {
@@ -117,9 +136,26 @@ async function playDice(bet,sum){
     if (game.ok) {
         game.json().then(data => {
             console.log(data);
-            chips.innerHTML=`$${data.coins}`
+
+            startRolling()
+            setTimeout(() => {
+                bet.addEventListener('click',placeBet);
+                stopRolling();//stop the animation loop
+                setTimeout(()=>{R1()},40);//drawlast image of animation
+                setTimeout(()=>{ctx.drawImage(dice[data.dice-1],0,0,unit,unit)},80);//draw our (result) dice
+                setTimeout(()=>{//after a dramatic pause, render the result of the game
+                    chips.innerHTML=`$${data.coins}`;
+                    if(data.win) ctx.drawImage(winPic,0,0,unit,unit);
+                    else ctx.drawImage(losePic,0,0,unit,unit);
+
+                },600);
+
+
+            }, 2000);
+
             
-            ctx.drawImage(dice[data.dice-1],0,0,unit,unit);//draw new dice
+            
+            
             
         });
         
@@ -136,3 +172,34 @@ async function back (event){
 }
 
 document.querySelector('#backToLobby').addEventListener('click', back);
+
+/*
+
+// variable to store our intervalID
+let nIntervId;
+
+function changeColor() {
+  // check if already an interval has been set up
+  if (!nIntervId) {
+    nIntervId = setInterval(flashText, 1000);
+  }
+}
+
+function flashText() {
+  const oElem = document.getElementById("my_box");
+  if (oElem.className === "go") {
+    oElem.className = "stop";
+  } else {
+    oElem.className = "go";
+  }
+}
+
+function stopTextColor() {
+  clearInterval(nIntervId);
+  // release our intervalID from the variable
+  nIntervId = null; 
+}
+
+document.getElementById("start").addEventListener("click", changeColor);
+document.getElementById("stop").addEventListener("click", stopTextColor);
+*/
