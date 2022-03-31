@@ -25,9 +25,10 @@ body {
 } */
 
 #mainbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* margin-bottom: 2px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(217deg, #22d4b1, #1a87e0);
+    /* background: linear-gradient(217deg, #225ad4, #551ae0); */
     
 }
 
