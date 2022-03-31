@@ -15,9 +15,14 @@
 } */
 
 body {
-    background-image:url("casinologo.png");
+    background-image:url("/casinologo2.png");
+    /* background-repeat: no-repeat;
+    background-position: center center; */
+
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* nav {
@@ -25,36 +30,39 @@ body {
 } */
 
 #mainbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background: linear-gradient(217deg, #22d4b1, #1a87e0); */
+    background: linear-gradient(217deg, #224bd4, #4f13dd);
+    
     /* margin-bottom: 2px; */
     
 }
 
 #home {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 475;
 }
 
 #casino {
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 2px;
     font-weight: 475;
 
 }
 
 #activelogin {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 475;
 }
 
 #logout {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 475;
 }
 
 #inactivelogin{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 475;
 }
 
