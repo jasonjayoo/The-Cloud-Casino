@@ -95,9 +95,7 @@ async function playDice(bet,sum){
         game.json().then(data => {
             console.log(data);
         });
-        //die=game.die;
-        //coins = game.bank;
-        //celebrate(game.win);
+        
     }else{
         console.log('Houston we have a problemerino')
     }
