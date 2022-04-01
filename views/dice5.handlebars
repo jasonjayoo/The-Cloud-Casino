@@ -2,14 +2,18 @@
 
 
 <canvas id="viewScreen"  class = "r" width="500" height="500"></canvas>
-<div>
+<div id="yourBet">
     <h2>Your Bet:</h2>
     <div id="yourBet"></div>
 
 </div>
 
-<div>
+<div id="placeYourBet">
     <h3>Place your $5 bet.</h3>
+</div>
+
+{{!-- <div> --}}
+    {{!-- <h3>Place your $5 bet.</h3> --}}
     <!--bet buttons, need to arrange this into a convenient pattern, maybe 2 rows, or separate numbers and even/odd-->
     <div id="betButtons" style="visibility:visible">
         <button id ="b1" type="button" class="Dbet" value="1">1</button><!--change to 123456-->
@@ -25,16 +29,19 @@
     
 
 
-</div>
+{{!-- </div> --}}
 
-<div>
-    <div>
+
+    <div id="availableChips">
         <h2>Available chips</h2>
-        <div id="chips"></div><br>
+        {{!-- <div id="chips"></div> --}}
     </div>
+
+    <div id="chips"></div>
+    
     <button type="button" id="backToLobby">Return To Casino Lobby</button>
 
-</div>
+
 
 
 

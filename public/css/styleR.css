@@ -2,12 +2,45 @@
 .r{
     border-radius: 5px;
 	border: 1px solid rgb(209, 180, 13);
+	position: absolute;
 	
 	
 	
 }
 
+#yourBet{
+	position: absolute;
+	bottom: 125px;
+}
 
+#placeYourBet{
+	position: absolute;
+	bottom: 200px;
+	/* left: 960px; */
+}
+
+#betButtons{
+	position: absolute;
+	bottom: 170px;
+	/* left: 940px; */
+}
+
+#backToLobby{
+	position: absolute;
+	bottom: 100px;
+	/* left: 990px; */
+}
+
+#availableChips{
+	position: absolute;
+	bottom: 250px;
+
+}
+
+#chips{
+	position: absolute;
+	bottom: 235px;
+}
 
 
 
