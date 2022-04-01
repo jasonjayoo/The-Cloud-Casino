@@ -27,6 +27,11 @@ User.init(
             allowNull: true,
             unique: false
         },
+        tempCoupon: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            unique: false
+        },
         password: {
             type: DataTypes.STRING,
             allowNull: false,

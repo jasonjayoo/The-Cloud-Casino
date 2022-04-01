@@ -175,5 +175,19 @@ router.get('/dice10', async (req, res) => {
     }
 });
 
+//RENDER AD PAGE
+router.get('/adForCoin', async (req, res) => {
+    try {
+        res.render('adForCoin', {
+            pageTitle: "Earn Free Coins",
+            loggedIn: req.session.logged_in
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+});
+
 
 module.exports = router;

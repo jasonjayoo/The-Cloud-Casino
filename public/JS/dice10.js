@@ -171,7 +171,13 @@ async function back (event){
     document.location.replace('/dashboard');
 }
 
+async function earn (event){
+    event.preventDefault();
+    document.location.replace('/adForCoin');
+}
+
 document.querySelector('#backToLobby').addEventListener('click', back);
+document.querySelector('#getCoins').addEventListener('click', earn);
 
 /*
 
