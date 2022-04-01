@@ -50,7 +50,7 @@ router.get('/login', async (req, res) => {
 router.get('/create', async (req, res) => {
     try {
         res.render('create', {
-            pageTitle: "My Dashboard",
+            pageTitle: "Casino Lobby",
             loggedIn: req.session.logged_in
         });
     }
@@ -65,7 +65,7 @@ router.get('/update/:id', async (req, res) => {
     try {
         const post = await Post.findByPk(req.params.id, { raw: true });
         res.render('update', {
-            pageTitle: "My Dashboard",
+            pageTitle: "Casino Lobby",
             loggedIn: req.session.logged_in,
             post
         });
@@ -91,7 +91,7 @@ router.get('/dashboard', async (req, res) => {
             });
         }
         res.render('dashboard', {
-            pageTitle: "My Dashboard",
+            pageTitle: "Casino Lobby",
             loggedIn: req.session.logged_in,
             posts
         });
@@ -134,7 +134,7 @@ router.get('/comment/:id', async (req, res) => {
         console.log(post);
 
         res.render('comment', {
-            pageTitle: "My Dashboard",
+            pageTitle: "Casino Lobby",
             loggedIn: req.session.logged_in,
             post
         });

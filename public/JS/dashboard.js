@@ -1,3 +1,14 @@
+function handleBG() {
+    console.log("this worked")
+
+    const body = document.querySelector('body')
+    body.removeAttribute("class", "bannerA");
+    body.setAttribute("class", "bannerB");
+    
+}
+
+handleBG();
+
 async function newPost (event){
     event.preventDefault();
     document.location.replace('/create');

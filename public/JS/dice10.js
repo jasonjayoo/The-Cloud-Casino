@@ -209,3 +209,16 @@ function stopTextColor() {
 document.getElementById("start").addEventListener("click", changeColor);
 document.getElementById("stop").addEventListener("click", stopTextColor);
 */
+
+
+// ******************** For BG Image Change**************************//
+function handleBG() {
+    console.log("this worked")
+
+    const body = document.querySelector('body')
+    body.removeAttribute("class", "bannerA");
+    body.setAttribute("class", "bannerB");
+    
+}
+
+handleBG();
