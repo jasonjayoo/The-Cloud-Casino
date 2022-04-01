@@ -15,11 +15,30 @@
 } */
 
 body {
-    background-image:url("/casinodice.jpg");
+    /* background-image:url("/casinologo5.png"); */
+    /* background-image:url("/casinodice.jpg"); */
     /* background-repeat: no-repeat;
     background-position: center center; */
 
-    background-size: cover;
+    /* background-size: cover; */
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+  
+}
+
+.bannerA {
+    background-image:url("/casinologo5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bannerB {
+    background-image:url("/casinodiceresized.jpg");
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -33,7 +52,12 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     /* background: linear-gradient(217deg, #22d4b1, #1a87e0); */
-    background: linear-gradient(217deg, #224bd4, #4f13dd);
+    /* background: linear-gradient(217deg, #224bd4, #4f13dd); */
+    background-image:url("/navbar3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
     
     /* margin-bottom: 2px; */
     
@@ -67,6 +91,11 @@ body {
 }
 
 #homepage {
+    background-color: black;
+    color: #F4A460;
+    font-size: 50px;
+    border-radius: 5px;
+    border: 2px solid #F4A460;
     font-weight: 550;
 
 }
@@ -77,11 +106,11 @@ body {
 }
 
 #logincard {
-    width: 55vh;
+    width: 60vh;
 }
 
 #signupcard {
-    width: 55vh;
+    width: 60vh;
 }
 
 #maincard {
