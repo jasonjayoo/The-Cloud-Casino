@@ -1,0 +1,22 @@
+#adScreenN{
+    position:relative;
+}
+#playAdN{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+#adN{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    
+}
+#payMeN{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+}
