@@ -28,14 +28,31 @@ body {
   
 }*/
 
-.bannerA {
+.bannerC {
+
+    height: 100%;
+    width: 100%;
+
     background-image:url("/casinologo5.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: rgb(115, 13, 211);
+    
+    
+    
 }
+.bannerA {
+    background: linear-gradient( to top,blue, pink);
+    background-size: 2000px 1000px;
+    
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+
 
 .bannerB {
     background-image:url("/casinodiceresized1.jpg");

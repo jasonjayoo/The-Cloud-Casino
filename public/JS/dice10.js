@@ -1,10 +1,10 @@
 
-const canvas = document.getElementById("viewScreen");
+const canvas = document.getElementById("viewScreenN");
 const ctx = canvas.getContext("2d");
 let rolling; //to store setInterval function for display of rolling dice
 
-const chips = document.getElementById("chips");
-const yourBet = document.getElementById("yourBet");
+const chips = document.getElementById("chipsN");
+const yourBet = document.getElementById("yourBetN");
 getMyMoney();
 
 
@@ -81,7 +81,7 @@ losePic.src = `lose.png`;
 
 
 
-const bet = document.getElementById("betButtons");
+const bet = document.getElementById("betButtonsN");
 bet.addEventListener('click',placeBet);
 
 
@@ -185,6 +185,10 @@ document.querySelector('#getCoins').addEventListener('click', earn);
 // ******************** For BG Image Change**************************//
 function handleBG() {
     console.log("this worked")
+
+    const castle = document.querySelector('#castle');
+    castle.removeAttribute("class", "bannerC");
+
 
     const body = document.querySelector('body')
     body.removeAttribute("class", "bannerA");

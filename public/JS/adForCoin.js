@@ -80,6 +80,10 @@ document.querySelector('#playVideoN').addEventListener('click', playVid);
 function handleBG() {
     console.log("this worked")
 
+    const castle = document.querySelector('#castle');
+    castle.removeAttribute("class", "bannerC");
+
+
     const body = document.querySelector('body')
     body.removeAttribute("class", "bannerA");
     body.setAttribute("class", "bannerB");
