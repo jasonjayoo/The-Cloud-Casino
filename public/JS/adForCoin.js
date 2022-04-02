@@ -74,3 +74,16 @@ async function getCoins(e){
 
 document.querySelector('#backToLobby2').addEventListener('click', back);
 document.querySelector('#playVideoN').addEventListener('click', playVid);
+
+
+// ******************** For BG Image Change**************************//
+function handleBG() {
+    console.log("this worked")
+
+    const body = document.querySelector('body')
+    body.removeAttribute("class", "bannerA");
+    body.setAttribute("class", "bannerB");
+    
+}
+
+handleBG();
