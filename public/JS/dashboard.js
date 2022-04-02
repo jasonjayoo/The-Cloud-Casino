@@ -9,14 +9,6 @@ function handleBG() {
 
 handleBG();
 
-async function newPost (event){
-    event.preventDefault();
-    document.location.replace('/create');
-}
-
-// document.querySelector('#newPost').addEventListener('click', newPost);
-
-//above this line will eventually be deleted
 
 async function diceFive (event){
     event.preventDefault();

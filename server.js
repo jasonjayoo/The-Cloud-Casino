@@ -7,8 +7,9 @@ require('dotenv');
 
 
 require('./models/User.js');
-require('./models/Post.js');
-require('./models/Comment.js');
+//maybe add a bank model? only one model is lame 
+//maybe different banks exist?
+
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -41,7 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'images')));/////////////////////////////////////////////////////ok?
 
 
-// app.get("/static", (req, res) => {
+// app.get("/static", (req, res) => {/////////////////what is this??
 //     res.render("static");
 // });
 

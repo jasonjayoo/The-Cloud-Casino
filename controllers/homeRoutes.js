@@ -1,22 +1,14 @@
 const router = require('express').Router();
-const { User, Post, Comment } = require('../models');
+const { User } = require('../models');///Need?
 
-//GET ALL POSTS & RENDER HOMEPAGE
+//RENDER HOMEPAGE
 router.get('/', async (req, res) => {
     try {
-        const dbPostData = await Post.findAll({ include: [{ model: User }] });
-        let posts = dbPostData.map((post) => {
-            post = post.get({ plain: true });
-            console.log(post);
-            date = post.date_created.split('-');
-            post.date_created = `${date[1]}/${date[2]}/${date[0]}`;
-            post.name = post.user.name;
-            return post;
-        });
+
         res.render('home', {
-            pageTitle: "The Cloud Casino",
+            pageTitle: '',////////////////////////////////////////////////////////////////////ADD SOMETHING HERE IF WE WANT
             loggedIn: req.session.logged_in,
-            posts
+            //posts
         });
     } catch (err) {
         res.status(500).json(err);
@@ -27,7 +19,8 @@ router.get('/', async (req, res) => {
 //RENDER SIGNUP PAGE
 router.get('/signup', async (req, res) => {
     try {
-        res.render('signup', { pageTitle: "The Cloud Casino" });
+        res.render('signup', { pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">Sign Up</h1>' });
+        
     }
     catch (err) {
         console.log(err);
@@ -38,7 +31,7 @@ router.get('/signup', async (req, res) => {
 //RENDER LOGIN PAGE
 router.get('/login', async (req, res) => {
     try {
-        res.render('login', { pageTitle: "The Cloud Casino" });
+        res.render('login', { pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">Log In</h1>' });
     }
     catch (err) {
         console.log(err);
@@ -46,54 +39,13 @@ router.get('/login', async (req, res) => {
     }
 });
 
-//RENDER CREATE NEW POST PAGE
-router.get('/create', async (req, res) => {
-    try {
-        res.render('create', {
-            pageTitle: "Casino Lobby",
-            loggedIn: req.session.logged_in
-        });
-    }
-    catch (err) {
-        console.log(err);
-        res.status.apply(500).json(err);
-    }
-});
-
-//RENDER UPDATE POST BY ID PAGE
-router.get('/update/:id', async (req, res) => {
-    try {
-        const post = await Post.findByPk(req.params.id, { raw: true });
-        res.render('update', {
-            pageTitle: "Casino Lobby",
-            loggedIn: req.session.logged_in,
-            post
-        });
-    }
-    catch (err) {
-        console.log(err);
-        res.status.apply(500).json(err);
-    }
-});
-
-//RENDER DASHBOARD
 router.get('/dashboard', async (req, res) => {
     try {
-        const dbPostData = await User.findByPk(req.session.user_id, { include: [{ model: Post }] });
-        let posts = [];
-        if (dbPostData && dbPostData.posts && dbPostData.posts.length) {
-            posts = dbPostData.posts.map((post) => {
-                post = post.get({ plain: true });
-                post.name = dbPostData.dataValues.name;
-                date = post.date_created.split('-');
-                post.date_created = `${date[1]}/${date[2]}/${date[0]}`;
-                return post;
-            });
-        }
+        
         res.render('dashboard', {
-            pageTitle: "Casino Lobby",
+            pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">Casino Lobby</h1>',
             loggedIn: req.session.logged_in,
-            posts
+            //posts
         });
     } catch (err) {
         console.log(err);
@@ -101,57 +53,12 @@ router.get('/dashboard', async (req, res) => {
     }
 })
 
-//RENDER COMMENT ON ONE POST BY ID
-router.get('/comment/:id', async (req, res) => {
-    try {
-        const postData = await Post.findByPk(req.params.id, {
-            include: [{ model: User }, { model: Comment, include: [User] }]
-        });
-
-        if (postData===null){
-            res.status(404).json('Post not found');
-            return;
-        }
-
-        post = postData.dataValues;
-        post.author = postData.dataValues.user.name;
-        delete post.user;
-        comments = post.comments;
-
-        comments = comments.map((comment)=>{
-            comment = comment.get({plain:true});
-            comment.commentor_name=comment.user.name;
-            delete comment.user;
-            date = comment.date_created.split('-');
-            comment.date_created = `${date[1]}/${date[2]}/${date[0]}`;
-            return comment;
-        }
-        );
-
-        post.comments=comments;
-        date = post.date_created.split('-');
-        post.date_created = `${date[1]}/${date[2]}/${date[0]}`;
-        console.log(post);
-
-        res.render('comment', {
-            pageTitle: "Casino Lobby",
-            loggedIn: req.session.logged_in,
-            post
-        });
-    } catch (err) {
-        console.log(err);
-        res.status(400).json(err);
-    }
-});
-
-//some stuff above this line will eventually get deleted//////////////////////////////////////////////////////////////////
-
 
 //RENDER DICE5 PAGE
 router.get('/dice5', async (req, res) => {
     try {
         res.render('dice5', {
-            pageTitle: "$5 Dice",
+            pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">$5 Dice</h1>',
             loggedIn: req.session.logged_in
         });
     }
@@ -165,7 +72,7 @@ router.get('/dice5', async (req, res) => {
 router.get('/dice10', async (req, res) => {
     try {
         res.render('dice10', {
-            pageTitle: "$10 Dice",
+            pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">$10 Dice</h1>',
             loggedIn: req.session.logged_in
         });
     }
@@ -179,7 +86,7 @@ router.get('/dice10', async (req, res) => {
 router.get('/adForCoin', async (req, res) => {
     try {
         res.render('adForCoin', {
-            pageTitle: "Earn Free Coins",
+            pageTitle:'<h1 class="px-3 py-2 d-inline" id="homepage">Earn Free Coins</h1>',
             loggedIn: req.session.logged_in
         });
     }
