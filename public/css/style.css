@@ -34,15 +34,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: blueviolet;
+    background-color: rgb(115, 13, 211);
 }
 
 .bannerB {
-    background-image:url("/casinodiceresized.jpg");
+    background-image:url("/casinodiceresized1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center; */
+    
 }
 
 /* nav {
