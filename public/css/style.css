@@ -34,6 +34,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-color: blueviolet;
 }
 
 .bannerB {
@@ -93,7 +94,7 @@ body {
 #homepage {
     background-color: black;
     color: #F4A460;
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 5px;
     border: 2px solid #F4A460;
     font-weight: 550;
