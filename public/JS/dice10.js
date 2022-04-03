@@ -1,5 +1,7 @@
 
 const canvas = document.getElementById("viewScreenN");
+const screenCont = document.getElementById("screenCont");
+
 const ctx = canvas.getContext("2d");
 let rolling; //to store setInterval function for display of rolling dice
 
@@ -53,6 +55,10 @@ let u = Math.min(w/2,h/2);
 canvas.style.width=`${u}px`;
 canvas.style.height=`${u}px`;
 
+screenCont.style.width=`${u}px`;
+screenCont.style.height=`${u}px`;
+
+
 let unit = 500;//Math.min(w/2,h/2);
 console.log(unit);
 console.log(typeof unit);
@@ -90,33 +96,21 @@ bet.addEventListener('click',placeBet);
 let x = 0;
 //when a bet is placed
 function placeBet(event){
-    bet.removeEventListener('click',placeBet);//disable buttons
+    
 
-    if(!event.target.value) return;//if they click between the buttons
+    if(!event.target.value)return;//if they click between the buttons
     else{
+        bet.removeEventListener('click',placeBet);//disable buttons
+        
 
         let b = event.target.value;
         yourBet.innerHTML=b;
         
         playDice(b,10);
-        /*
-        console.log(b);
-////need to replace this with a proper timer function
-
-        for (let k=0; k<100; k++){
-            ctx.drawImage(midice[Math.floor(Math.random() * 6)],0,0,450,447, 0,0,unit,unit);
-            x=Math.floor(Math.random() * 6)+1
-            ctx.drawImage(dice[x-1],0,0,450,447, 0,0,unit,unit);
-        }
-
-        console.log(x);
-
-
-        
-*/
         
         return;
     }
+    console.log("whaat");
 }
 
 
@@ -176,8 +170,8 @@ async function earn (event){
     document.location.replace('/adForCoin');
 }
 
-document.querySelector('#backToLobby').addEventListener('click', back);
-document.querySelector('#getCoins').addEventListener('click', earn);
+document.querySelector('#backToLobbyN').addEventListener('click', back);
+document.querySelector('#getCoinsN').addEventListener('click', earn);
 
 
 
