@@ -58,7 +58,7 @@ router.get('/dashboard', async (req, res) => {
 router.get('/dice5', async (req, res) => {
     try {
         res.render('dice5', {
-            pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">$5 Dice</h1>',
+            pageTitle: '',
             loggedIn: req.session.logged_in
         });
     }
@@ -68,11 +68,11 @@ router.get('/dice5', async (req, res) => {
     }
 });
 
-//RENDER DICE5 PAGE
+//RENDER DICE10 PAGE
 router.get('/dice10', async (req, res) => {
     try {
         res.render('dice10', {
-            pageTitle: '<h1 class="px-3 py-2 d-inline" id="homepage">$10 Dice</h1>',
+            pageTitle: '',
             loggedIn: req.session.logged_in
         });
     }
