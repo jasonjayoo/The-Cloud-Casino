@@ -80,11 +80,6 @@ web_modules/
 
 # dotenv environment variable files
 .env
-<<<<<<< HEAD
-node_modules
-znotes
-.DS_Store
-=======
 .env.development.local
 .env.test.local
 .env.production.local
@@ -175,4 +170,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,windows
->>>>>>> 29bbac0db0b2172f65b43e59955edce81d480ec5
