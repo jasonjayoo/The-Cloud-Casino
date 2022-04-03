@@ -70,7 +70,7 @@ body {
 #mainbar {
     padding-top: 10px;
     padding-bottom: 10px;
-    background: linear-gradient(217deg, rgb(138, 138, 138), rgb(68, 67, 67)); 
+    background: linear-gradient(217deg, rgb(138, 138, 138), rgb(85, 83, 83)); 
     /* background: linear-gradient(217deg, #224bd4, #4f13dd); 
     background-image:url("/navbar4N.jpg");
     */
@@ -111,10 +111,10 @@ body {
 
 #homepage {
     background-color: rgb(46, 46, 46);
-    color:  rgb(138, 138, 138);
-    font-size: 40px;
+    color:  #FFF;
+    font-size: 47px;
     border-radius: 5px;
-    border: 2px solid  rgb(138, 138, 138);
+    border: 3px solid  rgb(138, 138, 138);
     font-weight: 550;
 
 }

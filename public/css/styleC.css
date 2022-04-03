@@ -5,11 +5,44 @@
     height:250px;
 
 }
+
+#dice5 {
+    padding: 10px 25px 10px 25px;
+    /* box-shadow: 2px 3px rgb(208, 193, 193); */
+    border: 1px solid white;
+    font-size: 19px;
+}
+
+#dice10 {
+    padding: 10px 25px 10px 25px;
+    /* box-shadow: 2px 3px rgb(208, 193, 193); */
+    border: 1px solid white;
+    font-size: 19px;
+}
+
+#playVideoN {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+#backToLobby2 {
+    border-radius: 5px;
+
+}
+
 #viewScreenN{
-    margin:0 auto;
+    margin-top: 16.5px;
     width:250px;
     height:250px;
+}
 
+#claimCoins {
+    border-radius: 5px;
+    margin-top: 16.5px;
+    border: 2px solid;
+    background-color: black;
+    color: #fff;
 }
 
 .boardN{
@@ -30,6 +63,7 @@
 .controlsN{
     padding:10px;
     margin:0 auto;
+
 }
 
 .infoN2 > .flat{
@@ -75,10 +109,16 @@
         height:200px;
     }
     #viewScreenN{
-        width:200px;
-        height:200px;
+        width:207px;
+        height:207px;
     }
 	
+}
+
+@media only screen and (max-width: 552px) {
+    .controlsN {
+        padding-top: 50px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -95,8 +135,20 @@
         height:150px;
     }
     #viewScreenN{
-        width:150px;
-        height:150px;
+        margin-top: 16px;
+        width:160px;
+        height:160px;
     }
+
+    .controlsN {
+        padding-top: 11px;
+    }
+
 	
+}
+
+@media only screen and (max-width: 436px) {
+    .controlsN {
+        padding-top: 30px;
+    }
 }
