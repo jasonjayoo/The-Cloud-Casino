@@ -92,11 +92,13 @@ async function newFormHandler(event){
     event.preventDefault();
     const name = document.querySelector('#new-user-name').value;
     const password = document.querySelector('#new-password').value;
+    const email = document.querySelector('#new-email').value;
     const response = await fetch('/api/user/signup', {
         method: 'POST',
         body: JSON.stringify({
             name,
-            password//add country
+            password,//add country
+            email
         }),
         headers: {
             'Content-Type': 'application/json'
