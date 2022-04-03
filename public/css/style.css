@@ -1,7 +1,7 @@
-/* #mainimage {
-    position: relative;
+*  {
+    font-family: 'Oswald', sans-serif;
 }
-
+/*
 #moneyrain {
     position: absolute;
     top: 0;
@@ -33,7 +33,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-image:url("/casinologo5.png");
+    background-image:url("/casinologo1N.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,7 +55,7 @@ body {
 
 
 .bannerB {
-    background-image:url("/casinodiceresized1.jpg");
+    background-image:url("/casinodiceresized4N.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -72,7 +72,8 @@ body {
     padding-bottom: 10px;
     /* background: linear-gradient(217deg, #22d4b1, #1a87e0); */
     /* background: linear-gradient(217deg, #224bd4, #4f13dd); */
-    background-image:url("/navbar3.jpg");
+    background-image:url("/navbar4N.jpg");
+    opacity: .8;
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
@@ -110,11 +111,11 @@ body {
 }
 
 #homepage {
-    background-color: black;
-    color: #F4A460;
+    background-color: rgb(237,179,207);
+    color: rgb(25,135,84);
     font-size: 40px;
     border-radius: 5px;
-    border: 2px solid #F4A460;
+    border: 2px solid rgb(25,135,84);
     font-weight: 550;
 
 }

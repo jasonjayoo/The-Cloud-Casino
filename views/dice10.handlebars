@@ -1,43 +1,52 @@
 
 
+<div class = "boardN">
+    <div id="screenCont">
+        <canvas id="viewScreenN"  class = "rN" width="500" height="500"></canvas>
+    </div>
 
-<canvas id="viewScreenN"  class = "r" width="500" height="500"></canvas>
-<div>
-    <h2>Your Bet:</h2>
-    <div id="yourBetN"></div>
+    <div class="controlsN">
 
-</div>
+        <div class="infoN2">
+            <button type="button" id="backToLobbyN" class="DbetN flat">Return To Lobby</button>
+            <button type="button" id="getCoinsN" class="DbetN  flat">Get Free Coins</button>
+        </div>
 
-<div>
-    <h3>Place your $10 bet.</h3>
-    <!--bet buttons, need to arrange this into a convenient pattern, maybe 2 rows, or separate numbers and even/odd-->
-    <div id="betButtonsN" style="visibility:visible">
-        <button id ="b1" type="button" class="Dbet" value="1">1</button><!--change to 123456-->
-        <button id ="b2" type="button" class="Dbet" value="2">2</button>
-        <button id ="b3" type="button" class="Dbet" value="3">3</button>
-        <button id ="b4" type="button" class="Dbet" value="4">4</button>
-        <button id ="b5" type="button" class="Dbet" value="5">5</button>
-        <button id ="b6" type="button" class="Dbet" value="6">6</button>
-        <button id ="bEven" type="button" class="Dbet" value="even">Even</button>
-        <button id ="bOdd" type="button" class="Dbet" value="odd">Odd</button>
+        <div class="infoN2 centN">
+            <div class="flat">Available chips:</div>
+            <div id="chipsN" class="flat"></div><br>
+        </div>
+
         
-    </div>
-    
 
+        <div class="infoN2">
+            <div class="centN">Place your $10 bet.</div>
+            <!--bet buttons, need to arrange this into a convenient pattern, maybe 2 rows, or separate numbers and even/odd-->
+            <div id="betButtonsN" style="visibility:visible">
+                <button id ="b1N" type="button" class="DbetN" value="1">1</button><!--change to 123456-->
+                <button id ="b2N" type="button" class="DbetN" value="2">2</button>
+                <button id ="b3N" type="button" class="DbetN" value="3">3</button>
+                <button id ="b4N" type="button" class="DbetN" value="4">4</button>
+                <button id ="b5N" type="button" class="DbetN" value="5">5</button>
+                <button id ="b6N" type="button" class="DbetN" value="6">6</button>
+                <button id ="bEvenN" type="button" class="DbetN" value="even">Even</button>
+                <button id ="bOddN" type="button" class="DbetN" value="odd">Odd</button>
+            </div>
+        </div>
+
+        <div class="infoN2 centN" >
+            <div class="flat">Your bet:</div>
+            <div id="yourBetN" class="flat"></div>
+        </div>
+
+
+       
+
+        
+
+    </div>
 
 </div>
-
-<div>
-    <div>
-        <h2>Available chips</h2>
-        <div id="chipsN"></div><br>
-    </div>
-    <button type="button" id="backToLobby">Return To Casino Lobby</button>
-    <button type="button" id="getCoins">Get Free Coins</button>
-
-</div>
-
-
 
 
 
