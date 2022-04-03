@@ -3,10 +3,11 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
+
 require('dotenv');
 
 
-require('./models/User.js');
+require('./models/user.js');
 //maybe add a bank model? only one model is lame 
 //maybe different banks exist?
 
