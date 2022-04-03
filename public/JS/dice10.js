@@ -47,16 +47,6 @@ async function getMyMoney(){
 }
 
 
-//dimensions of display in pixels
-let w = window.innerWidth;
-let h = window.innerHeight;
-let u = Math.min(w/2,h/2);
-//dimensions of canvas in terms of screen
-canvas.style.width=`${u}px`;
-canvas.style.height=`${u}px`;
-
-screenCont.style.width=`${u}px`;
-screenCont.style.height=`${u}px`;
 
 
 let unit = 500;//Math.min(w/2,h/2);
@@ -69,7 +59,7 @@ let winPic = new Image();
 let losePic = new Image();
 
 dice[0].onload = function () {
-    ctx.clearRect(0,0,u,u);
+    ctx.clearRect(0,0,unit,unit);
     ctx.drawImage(dice[0],0,0,unit,unit);//draw board
 }
 

@@ -33,7 +33,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-image:url("/casinologo1N.png");
+    background-image:url("/casinologo5.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,7 +43,7 @@ body {
     
 }
 .bannerA {
-    background: linear-gradient( to top,blue, pink);
+    background: linear-gradient( 0deg, rgb(46, 46, 46), rgb(180, 180, 180));
     background-size: 2000px 1000px;
     
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ body {
 
 
 .bannerB {
-    background-image:url("/casinodiceresized4N.jpg");
+    background-image:url("/casinodiceresized1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,16 +70,15 @@ body {
 #mainbar {
     padding-top: 10px;
     padding-bottom: 10px;
-    /* background: linear-gradient(217deg, #22d4b1, #1a87e0); */
-    /* background: linear-gradient(217deg, #224bd4, #4f13dd); */
+    background: linear-gradient(217deg, rgb(138, 138, 138), rgb(68, 67, 67)); 
+    /* background: linear-gradient(217deg, #224bd4, #4f13dd); 
     background-image:url("/navbar4N.jpg");
-    opacity: .8;
+    */
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    /* background-attachment: fixed; 
     background-position: center;
-    
-    /* margin-bottom: 2px; */
+     margin-bottom: 2px; */
     
 }
 
@@ -111,11 +110,11 @@ body {
 }
 
 #homepage {
-    background-color: rgb(237,179,207);
-    color: rgb(25,135,84);
+    background-color: rgb(46, 46, 46);
+    color:  rgb(138, 138, 138);
     font-size: 40px;
     border-radius: 5px;
-    border: 2px solid rgb(25,135,84);
+    border: 2px solid  rgb(138, 138, 138);
     font-weight: 550;
 
 }

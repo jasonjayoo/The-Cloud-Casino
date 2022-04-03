@@ -1,8 +1,22 @@
 
+#screenContN{
+    margin:0 auto;
+    width:250px;
+    height:250px;
+
+}
+#viewScreenN{
+    margin:0 auto;
+    width:250px;
+    height:250px;
+
+}
+
 .boardN{
     display:flex;
     flex-wrap:wrap;
-    font-size: 30px;
+    
+    font-size: 25px;
 }
 
 .rN{
@@ -11,11 +25,11 @@
 	position: absolute;
 	
 	
-	
 }
 
 .controlsN{
-    padding-left:10px;
+    padding:10px;
+    margin:0 auto;
 }
 
 .infoN2 > .flat{
@@ -34,13 +48,55 @@
 }
 
 .infoN2 {
-    background-color: rgb(237,179,207);
-    color: rgb(25,135,84);
-    border: 2px solid rgb(25,135,84);
+    background-color: rgb(46, 46, 46);
+    color: rgb(138, 138, 138);
+    border: 2px solid  rgb(138, 138, 138);
     border-radius:5px;
     margin:5px;
 }
 .centN{
     display:flex;
     justify-content:center;
+}
+
+
+@media only screen and (max-width: 777px) {
+
+    .boardN{
+        
+        font-size: 20px;
+    }
+    .DbetN{
+        margin:3px;
+    }
+
+    #screenContN{
+        width:200px;
+        height:200px;
+    }
+    #viewScreenN{
+        width:200px;
+        height:200px;
+    }
+	
+}
+
+@media only screen and (max-width: 500px) {
+    .boardN{
+        
+        font-size: 15px;
+    }
+
+    .DbetN{
+        margin:1px;
+    }
+    #screenContN{
+        width:150px;
+        height:150px;
+    }
+    #viewScreenN{
+        width:150px;
+        height:150px;
+    }
+	
 }
