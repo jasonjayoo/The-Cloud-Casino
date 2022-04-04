@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { user } = require('../../models');
 
 router.get('/money',async (req,res) =>{
 
@@ -9,7 +9,7 @@ router.get('/money',async (req,res) =>{
             res.status(401).json("User is not logged in");
             return
         }else{
-            const bank = await User.findByPk(req.session.user_id);
+            const bank = await user.findByPk(req.session.user_id);
             let total = bank.coins;
 
             res.status(200).json({coins:total});
@@ -31,7 +31,7 @@ router.put('/dice', async (req, res) => {
             res.status(401).json("User is not logged in");
             return
         }else{
-            const bank = await User.findByPk(req.session.user_id);
+            const bank = await user.findByPk(req.session.user_id);
 
             let D = Math.floor(Math.random() * 6)+1;//roll the die
             let B = req.body.choice;//get the user's bet (1, 2, 3, 4, 5, 6, even or odd as a string)
@@ -75,7 +75,7 @@ router.put('/dice', async (req, res) => {
 
             total+=gain;
 
-            await User.update({
+            await user.update({
                 coins : total},{
                 where: {id: req.session.user_id,},
             });

@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { user } = require('../../models');
 
 
 //verify that name is unique
 router.get('/check/:id', async(req,res)=>{
 
     try{
-        const Aname = await User.findOne({ where: { name: req.params.id }});
+        const Aname = await user.findOne({ where: { name: req.params.id }});
         if(!Aname) {
             res.status(200).json({ message: 'hi' });
             return;
@@ -34,7 +34,7 @@ router.post('/signup', async (req, res) => {
             password: req.body.password,
             coins: 500
         }
-        const userData = await User.create(Body);
+        const userData = await user.create(Body);
         
 
         req.session.save(() => {
@@ -56,7 +56,7 @@ router.post('/login', async (req, res) => {
             return;
         }
 
-        const userData = await User.findOne({ where: { name: req.body.name } });
+        const userData = await user.findOne({ where: { name: req.body.name } });
 
         if (!userData) {
             res

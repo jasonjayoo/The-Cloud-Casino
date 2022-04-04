@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User} = require('../../models');
+const { user} = require('../../models');
 
 
 
@@ -8,13 +8,13 @@ router.put('/coins1',async (req,res) =>{
     try {
 
         if (!req.session.logged_in) {
-            res.status(401).json("User is not logged in");
+            res.status(401).json("user is not logged in");
             return
         }else{ 
 
             let RANDO = Math.floor(Math.random()*10000000);
 
-            await User.update({
+            await user.update({
                 tempCoupon : RANDO},{
                 where: {id: req.session.user_id,},
             });
@@ -39,14 +39,14 @@ router.put('/coins2',async (req,res) =>{
     try {
 
         if (!req.session.logged_in) {
-            res.status(401).json("User is not logged in");
+            res.status(401).json("user is not logged in");
             return
         }else{ 
 
-            const check = await User.findByPk(req.session.user_id);
+            const check = await user.findByPk(req.session.user_id);
             let RANDO = check.tempCoupon;
 
-            await User.update({
+            await user.update({
                 tempCoupon : 0},{
                 where: {id: req.session.user_id,},
             });
@@ -56,9 +56,9 @@ router.put('/coins2',async (req,res) =>{
 
             }else{
 
-                const bank = await User.findByPk(req.session.user_id);//get user
+                const bank = await user.findByPk(req.session.user_id);//get user
                 let total = bank.coins+50;//get present amount of coins and add 50
-                await User.update({//set new amount of coins
+                await user.update({//set new amount of coins
                     coins : total},{
                     where: {id: req.session.user_id,},
                 });
