@@ -26,7 +26,7 @@ I like gambling but I dont like losing my hard earned money. So, I want a progra
 -Users must create a original username and password <br>
 -This creates an account that is linked to their IP address and verified email address(confirmation code sent via email) <br>
 -Users must authenticate themselves via verification code that will be sent to their email<br>
--Users starts the game with 1,000 chips(1 chip = 1 dollar - "NOT REAL MONEY")<br>
+-Users starts the game with 500 chips(1 chip = 1 dollar - "NOT REAL MONEY")<br>
 -Users can bet a minimum 5 chips and a maximum of 100 chips in the initial rookie table<br>
 -If the user runs out of coins they will have to watch a short video to gain more coins<br>
 -If user wins 250 chips they will unlock the next level where user minimum is 50 and maximum is 250<br>
@@ -58,9 +58,9 @@ I like gambling but I dont like losing my hard earned money. So, I want a progra
 
 ## Heroku:
 
-[![Heroku-Link](images/herokuscreenshot.png)](https://quiet-journey-86661.herokuapp.com/)
+[![Heroku-Link](images/herokuscreenshot.png)](https://glacial-reef-71102.herokuapp.com/)
 
-https://quiet-journey-86661.herokuapp.com/
+https://glacial-reef-71102.herokuapp.com/
   
 <br>
 
@@ -79,49 +79,42 @@ Once downloaded, open the file in VS Code.
 <br>
   
 
-[Screenshot1](images/Screenshot1.png)  "Homepage"
+[Screenshot1](images/homepage-screenshot.png)  "Initial page when loaded: Main logo with navbar. Login required to enter casino." 
 
-<img src="images/Screenshot1.png">
-
-
-[Screenshot2](images/Screenshot2.png)  "Login Page"
-
-<img src="images/Screenshot2.png">
+<img src="images/homepage-screenshot.png">
 
 <br>
 
-[Screenshot3](images/Screenshot3.png)  "Creating an account"
-<img src="images/Screenshot3.png">
+[Screenshot2](images/login-screenshot.png)  "Login Page: User can enter username and password to enter casino"
+
+<img src="images/login-screenshot.png">
 
 <br>
 
-[Screenshot4](images/Screenshot4.png)  "Once logged-in, My Dashboard - Add New Post"
-<img src="images/Screenshot4.png">
+[Screenshot3](images/sign-up-screenshot.png)  "Creating an account: User can create a username and password as long as they meet the standard requirements."
+<img src="images/sign-up-screenshot.png">
 
 <br>
 
-[Screenshot5](images/Screenshot5.png)  "Adding New Post with title - First Entry, Content - First Entry - Test"
-<img src="images/Screenshot5.png">
+[Screenshot4](images/casino-lobby-screenshot.png)  "Once logged-in, Casino Lobby: User will be directed to pic either $5 dice or $10 dice."
+<img src="images/casino-lobby-screenshot.png">
 
 <br>
 
-[Screenshot6](images/Screenshot6.png)  "First Entry Post Created - Option to edit or delete visible"
-<img src="images/Screenshot6.png">
+[Screenshot5](images/$5-dice-screenshot.png)  "$5 Game of Dice: User can pick numbered bets from 1-6 and even or odd. User will be able to see wether their bet was correct or false and their available chips. Users will need to watch short video to gain more chips."
+<img src="images/$5-dice-screenshot.png">
 
 <br>
 
-[Screenshot7](images/Screenshot7.png)  "View all Departments"
-<img src="images/Screenshot7.png">
+[Screenshot6](images/$10-dice-screenshot.png)  "$10 Game of Dice: User can pick numbered bets from 1-6 and even or odd. User will be able to see wether their bet was correct or false and their available chips. Users will need to watch short video to gain more chips."
+<img src="images/$10-dice-screenshot.png">
 
 <br>
 
-[Screenshot8](images/Screenshot8.png)  "Commenting on First Entry Post with comment - First Comment"
-<img src="images/Screenshot8.png">
+[Screenshot7](images/free-coins-screenshot.png)  "Free Coins: User will have to choose between watching a short video to get free coins or return to lobby. After watching video user will recieve 50 free coins."
+<img src="images/free-coins-screenshot.png">
 
-<br>
 
-[Screenshot9](images/Screenshot9.png)  "Option to Update or Delete existing comment"
-<img src="images/Screenshot9.png">
 
 <br>
 <br>
