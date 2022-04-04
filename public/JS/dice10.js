@@ -28,7 +28,7 @@ function stopRolling(A) {
 
 
 async function getMyMoney(){
-    const myMoney = await fetch('/api/game/money', {
+    const myMoney = await fetch('/API/game/money', {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json'
