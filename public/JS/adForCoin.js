@@ -2,9 +2,10 @@ const adN = document.getElementById('adN');
 const payMeN = document.getElementById('payMeN');
 
 const adScreenN = document.getElementById('adScreenN');
+const ourButtons = document.getElementById('ourButtons');
 
-adScreenN.height = window.innerHeight*.8;
-adScreenN.width = window.innerWidth*.8;
+//adScreenN.height = window.innerHeight*.8;
+//adScreenN.width = window.innerWidth*.8;
 
 let claimCoins;//button that does not yet exist
 
@@ -16,6 +17,9 @@ async function back (event){
 }
 
 async function playVid(){
+    adScreenN.style.display="block";
+    ourButtons.style.display="none";
+
     adN.innerHTML=`<iframe width='560' height='315' src= 'https://www.youtube.com/embed/P2oXbAKUm1w?&autoplay=1&mute=1&controls=0' frameborder='0'  ></iframe>`
     
     const coins1 = await fetch('/API/free/coins1', {
@@ -29,7 +33,7 @@ async function playVid(){
         coins1.json().then(data => {
             console.log(data);
             console.log(data.coupon);
-            payMeN.innerHTML=`<button type="button" id="claimCoins" value="${data.coupon}">Receive Your Coins!</button>`;
+            payMeN.innerHTML=`<button type="button" id="claimCoins" value="${data.coupon}">Click To Get Coins!</button>`;
             claimCoins = document.getElementById('claimCoins');
             claimCoins.addEventListener('click',getCoins);
             });
@@ -60,7 +64,7 @@ async function getCoins(e){
             console.log(data);
             //display a message saying good job
             //have an array of videos in the server maybe, add an extra API call to get the next video??///////////////////////////////////////
-            
+            document.location.replace('/dashboard');
             });
     
     }else{
