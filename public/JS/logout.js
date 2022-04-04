@@ -1,7 +1,7 @@
 async function logout(event){
     event.preventDefault();
 
-    const response = await fetch('/api/user/logout', {
+    const response = await fetch('/API/user/logout', {
         method: 'POST'
     });
     if (response.ok) {

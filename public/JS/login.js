@@ -2,7 +2,7 @@ async function newFormHandler(event){
     event.preventDefault();
     const name = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
-    const response = await fetch('/api/user/login', {
+    const response = await fetch('/API/user/login', {
         method: 'POST',
         body: JSON.stringify({
             name,

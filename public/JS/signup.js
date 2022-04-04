@@ -29,7 +29,7 @@ async function verifyName(){
         warning.innerText = "Choose a cool name like Keith or Thunderbullion";
     }
     else{
-        const AA = await fetch(`/api/user/check/${name}`, {
+        const AA = await fetch(`/API/user/check/${name}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ async function newFormHandler(event){
     event.preventDefault();
     const name = document.querySelector('#new-user-name').value;
     const password = document.querySelector('#new-password').value;
-    const response = await fetch('/api/user/signup', {
+    const response = await fetch('/API/user/signup', {
         method: 'POST',
         body: JSON.stringify({
             name,
