@@ -18,7 +18,7 @@ async function back (event){
 async function playVid(){
     adN.innerHTML=`<iframe width='560' height='315' src= 'https://www.youtube.com/embed/P2oXbAKUm1w?&autoplay=1&mute=1&controls=0' frameborder='0'  ></iframe>`
     
-    const coins1 = await fetch('/api/free/coins1', {
+    const coins1 = await fetch('/API/free/coins1', {
         method: 'PUT',
         headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ async function getCoins(e){
     claimCoins.removeEventListener('click',getCoins);//disable button
     let v = e.target.value;
     
-    const coins2 = await fetch('/api/free/coins2', {
+    const coins2 = await fetch('/API/free/coins2', {
         method: 'PUT',
         body: JSON.stringify({
             v,
