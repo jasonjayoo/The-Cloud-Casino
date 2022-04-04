@@ -1,76 +1,107 @@
+#adScreenN{
+    position:relative;
+}
+#playAdN{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+#adN{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    
+}
+#payMeN{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+}
 
-.r{
+/* .r{
     border-radius: 5px;
 	border: 1px solid rgb(209, 180, 13);
 	position: absolute;
 	
 	
 	
-}
+} */
 
 #yourBet{
 	position: absolute;
-	bottom: 125px;
+	bottom: 130px;
+	color: #f4a460;
 }
 
 #placeYourBet{
 	position: absolute;
-	bottom: 200px;
+	bottom: 205px;
+	color: #f4a460;
 	/* left: 960px; */
 }
 
 #betButtons{
 	position: absolute;
-	bottom: 170px;
+	bottom: 175px;
+	border: none;
 	/* left: 940px; */
 }
 
 #backToLobby{
 	position: absolute;
-	bottom: 100px;
+	bottom: 65px;
 	/* left: 990px; */
 }
 
 #availableChips{
 	position: absolute;
-	bottom: 250px;
+	bottom: 260px;
+	color: #f4a460;
 
 }
 
 #chips{
 	position: absolute;
-	bottom: 235px;
+	bottom: 240px;
+	color: #f4a460;
+}
+
+#getCoins{
+	position: absolute;
+	bottom: 100px;
+}
+
+/* #b1, #b2, #b3, #b4, #b5, #b6{
+	background-color: white;
+	transition-duration: 0.4s;
+	
+	
+} */
+
+button:hover{
+	background-color: black;
+	color: #f4a460;
+	border: 1px solid #f4a460;
 }
 
 
+button{
+	border: none;
+	border-radius: 12px;
 
-#b1{
-	color:red;
 }
-#b1{
-	color:red;
-}
-#b1{
-	color:red;
-}
-#b1{
-	color:red;
-}
+
 
 
 .loader{
 	display:none;
 }
-/*
-canvas, button{
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	margin-top:20px;
-	font-size:50px;
-	
+
+@media screen and (max-width: 500px) {
+	#availableChips {
+		width: 43vh;
+	}
 }
-
-
-*/
-

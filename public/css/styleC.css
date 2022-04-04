@@ -20,3 +20,65 @@
     left:0;
     z-index:3;
 }
+
+/* .r{
+    border-radius: 5px;
+	border: 1px solid rgb(209, 180, 13);
+	position: absolute;
+	
+	
+	
+} */
+
+#yourBet{
+	position: absolute;
+	bottom: 125px;
+	color: #f4a460;
+}
+
+#placeYourBet{
+	position: absolute;
+	bottom: 200px;
+	color: #f4a460;
+	/* left: 960px; */
+}
+
+#betButtons{
+	position: absolute;
+	bottom: 170px;
+	/* left: 940px; */
+}
+
+#backToLobby{
+	position: absolute;
+	bottom: 100px;
+	/* left: 990px; */
+}
+
+#availableChips{
+	position: absolute;
+	bottom: 250px;
+	color: #f4a460;
+
+}
+
+#chips{
+	position: absolute;
+	bottom: 235px;
+	color: #f4a460;
+}
+
+#getCoins{
+	position: absolute;
+	bottom: 100px;
+}
+
+button:hover{
+	background-color: black;
+	color: #f4a460;
+    border: 1px solid #f4a460;
+}
+
+.loader{
+	display:none;
+}
