@@ -126,12 +126,12 @@ body {
 
 #logincard {
     width: 32vw;
-    height: 45vh;
+    /* height: 45vh; */
 }
 
 #signupcard {
     width: 35vw;
-    height: 55vh;
+    /* height: 55vh; */
 }
 
 #maincard {
@@ -158,12 +158,12 @@ body {
 @media only screen and (max-width: 999px) {
     #logincard {
         width: 48vw;
-        height: 50vh;
+        /* height: 50vh; */
     }
 
     #signupcard {
         width: 50vw;
-        height: 60vh;
+        /* height: 60vh; */
     }
 }
 
@@ -172,12 +172,12 @@ body {
 
     #logincard {
         width: 55vw;
-        height: 50vh
+        /* height: 50vh */
     }
     
     #signupcard {
         width: 55vw;
-        height: 60vh
+        /* height: 60vh */
     }
 	
 }
@@ -186,12 +186,12 @@ body {
 
     #logincard {
         width: 70vw;
-        height: 50vh
+        /* height: 50vh */
     }
     
     #signupcard {
         width: 80vw;
-        height: 60vh
+        /* height: 60vh */
     }
 	
 }
@@ -208,12 +208,12 @@ body {
 
     #logincard {
         width: 80vw;
-        height: 50vh
+        /* height: 50vh */
     }
     
     #signupcard {
         width: 80vw;
-        height: 60vh
+        /* height: 60vh */
     }
 	
 }
@@ -239,12 +239,12 @@ body {
     }
     #logincard {
         width: 80vw;
-        height: 50vh;
+        /* height: 50vh; */
     }
     
     #signupcard {
         width: 80vw;
-        height: 58vh;
+        /* height: 58vh; */
     }
 	
 }
@@ -268,12 +268,12 @@ body {
 
     #logincard {
         width: 80vw;
-        height: 50vh
+        /* height: 50vh */
     }
     
     #signupcard {
         width: 80vw;
-        height: 58vh
+        /* height: 58vh */
     }
 	
 }
