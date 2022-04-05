@@ -86,7 +86,7 @@ router.get('/dice10', async (req, res) => {
 router.get('/adForCoin', async (req, res) => {
     try {
         res.render('adForCoin', {
-            pageTitle:'<h1 class="px-3 py-2 d-inline" id="homepage">Earn Free Coins</h1>',
+            pageTitle:'',
             loggedIn: req.session.logged_in
         });
     }
