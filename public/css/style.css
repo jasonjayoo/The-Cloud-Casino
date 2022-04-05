@@ -159,3 +159,17 @@ body {
     }
 	
 }
+
+@media only screen and (max-width: 320px) {
+
+    #homepage{
+        font-size: 37px;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+
+    #homepage{
+        font-size: 27px;
+    }
+}

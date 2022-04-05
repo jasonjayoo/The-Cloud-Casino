@@ -20,7 +20,7 @@ async function playVid(){
     adScreenN.style.display="block";
     ourButtons.style.display="none";
 
-    adN.innerHTML=`<iframe width='560' height='315' src= 'https://www.youtube.com/embed/P2oXbAKUm1w?&autoplay=1&mute=1&controls=0' frameborder='0'  ></iframe>`
+    adN.innerHTML=`<iframe id="video1" src= 'https://www.youtube.com/embed/P2oXbAKUm1w?&autoplay=1&mute=1&controls=0' frameborder='0'  ></iframe>`
     
     const coins1 = await fetch('/API/free/coins1', {
         method: 'PUT',
