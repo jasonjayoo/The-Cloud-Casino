@@ -96,7 +96,7 @@ function placeBet(event){
         let b = event.target.value;
         yourBet.innerHTML=b;
         
-        playDice(b,10);
+        playDice(b,1000);
         
         return;
     }
@@ -123,7 +123,7 @@ async function playDice(choice,sum){
 
             startRolling()
             setTimeout(() => {
-                if(!(data.coins<10)){
+                if(!(data.coins<1000)){
                     bet.addEventListener('click',placeBet);
                 }
                 stopRolling();//stop the animation loop
@@ -133,11 +133,12 @@ async function playDice(choice,sum){
                     chips.innerHTML=`$${data.coins}`;
                     if(data.win) ctx.drawImage(winPic,0,0,unit,unit);
                     else ctx.drawImage(losePic,0,0,unit,unit);
-                    if(data.coins<10){
+                    if(data.coins<1000){
                         setTimeout(()=>{
                             back();
                         },500);
                     }
+
                 },600);
 
 
