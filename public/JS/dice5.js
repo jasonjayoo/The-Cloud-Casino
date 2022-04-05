@@ -123,7 +123,9 @@ async function playDice(choice,sum){
 
             startRolling()
             setTimeout(() => {
-                bet.addEventListener('click',placeBet);
+                if(!(data.coins<5)){
+                    bet.addEventListener('click',placeBet);
+                }
                 stopRolling();//stop the animation loop
                 setTimeout(()=>{R1()},40);//drawlast image of animation
                 setTimeout(()=>{ctx.drawImage(dice[data.dice-1],0,0,unit,unit)},80);//draw our (result) dice
@@ -131,7 +133,11 @@ async function playDice(choice,sum){
                     chips.innerHTML=`$${data.coins}`;
                     if(data.win) ctx.drawImage(winPic,0,0,unit,unit);
                     else ctx.drawImage(losePic,0,0,unit,unit);
-
+                    if(data.coins<5){
+                        setTimeout(()=>{
+                            back();
+                        },500);
+                    }
                 },600);
 
 
@@ -150,19 +156,13 @@ async function playDice(choice,sum){
 
 
 
-async function back (event){
-    event.preventDefault();
+async function back (){
     document.location.replace('/dashboard');
 }
 
-async function earn (event){
-    event.preventDefault();
-    document.location.replace('/adForCoin');
-}
+
 
 document.querySelector('#backToLobbyN').addEventListener('click', back);
-document.querySelector('#getCoinsN').addEventListener('click', earn);
-
 
 
 
@@ -181,3 +181,5 @@ function handleBG() {
 }
 
 handleBG();
+
+

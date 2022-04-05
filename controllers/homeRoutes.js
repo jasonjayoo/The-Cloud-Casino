@@ -69,6 +69,48 @@ router.get('/dice5', async (req, res) => {
 });
 
 //RENDER DICE10 PAGE
+router.get('/dice100', async (req, res) => {
+    try {
+        res.render('dice100', {
+            pageTitle: '',
+            loggedIn: req.session.logged_in
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+});
+
+//RENDER DICE10 PAGE
+router.get('/dice500', async (req, res) => {
+    try {
+        res.render('dice500', {
+            pageTitle: '',
+            loggedIn: req.session.logged_in
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+});
+
+//RENDER DICE10 PAGE
+router.get('/dice1000', async (req, res) => {
+    try {
+        res.render('dice1000', {
+            pageTitle: '',
+            loggedIn: req.session.logged_in
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+});
+
+//RENDER DICE10 PAGE
 router.get('/dice10', async (req, res) => {
     try {
         res.render('dice10', {
@@ -81,6 +123,7 @@ router.get('/dice10', async (req, res) => {
         res.status.apply(500).json(err);
     }
 });
+
 
 //RENDER AD PAGE
 router.get('/adForCoin', async (req, res) => {
