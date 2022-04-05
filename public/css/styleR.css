@@ -42,6 +42,9 @@
 	bottom: 235px;
 }
 
+button:hover{
+	background-color: lightgray;
+}
 
 
 #b1{
