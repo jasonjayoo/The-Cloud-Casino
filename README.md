@@ -58,7 +58,7 @@ I like gambling but I dont like losing my hard earned money. So, I want a progra
 
 ## Heroku:
 
-[![Heroku-Link](images/herokuscreenshot.png)](https://glacial-reef-71102.herokuapp.com/)
+[![Heroku-Link](images/heroku-screenshot.png)](https://glacial-reef-71102.herokuapp.com/)
 
 https://glacial-reef-71102.herokuapp.com/
   
