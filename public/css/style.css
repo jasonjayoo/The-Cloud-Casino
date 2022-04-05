@@ -125,11 +125,13 @@ body {
 }
 
 #logincard {
-    width: 60vh;
+    width: 32vw;
+    height: 45vh;
 }
 
 #signupcard {
-    width: 60vh;
+    width: 35vw;
+    height: 55vh;
 }
 
 #maincard {
@@ -152,40 +154,154 @@ body {
     text-align: center;
 }
 
+
+@media only screen and (max-width: 999px) {
+    #logincard {
+        width: 48vw;
+        height: 50vh;
+    }
+
+    #signupcard {
+        width: 50vw;
+        height: 60vh;
+    }
+}
+
+
 @media only screen and (max-width: 777px) {
 
     #logincard {
-        width: 48vh;
+        width: 55vw;
+        height: 50vh
     }
     
     #signupcard {
-        width: 48vh;
+        width: 55vw;
+        height: 60vh
+    }
+	
+}
+
+@media only screen and (max-width: 650px) {
+
+    #logincard {
+        width: 70vw;
+        height: 50vh
+    }
+    
+    #signupcard {
+        width: 80vw;
+        height: 60vh
     }
 	
 }
 
 @media only screen and (max-width: 500px) {
 
+    #available-password {
+        font-size: .8rem;
+    }
+
+    #available-username {
+        font-size: .8rem;
+    }
+
     #logincard {
-        width: 43vh;
+        width: 80vw;
+        height: 50vh
     }
     
     #signupcard {
-        width: 43vh;
+        width: 80vw;
+        height: 60vh
+    }
+	
+}
+
+@media only screen and (max-width: 390px) {
+    #available-password {
+        font-size: .75rem;
+    }
+
+    #available-username {
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 347px) {
+
+    #available-password {
+        font-size: .7rem;
+    }
+
+    #available-username {
+        font-size: .7rem;
+    }
+    #logincard {
+        width: 80vw;
+        height: 50vh;
+    }
+    
+    #signupcard {
+        width: 80vw;
+        height: 58vh;
     }
 	
 }
 
 @media only screen and (max-width: 320px) {
 
+    #available-password {
+        font-size: .61rem;
+    }
+
+    #available-username {
+        font-size: .61rem;
+    }
+
     #homepage{
         font-size: 37px;
     }
 }
 
+@media only screen and (max-width: 299px) {
+
+    #logincard {
+        width: 80vw;
+        height: 50vh
+    }
+    
+    #signupcard {
+        width: 80vw;
+        height: 58vh
+    }
+	
+}
+
 @media only screen and (max-width: 270px) {
+
+    #available-password {
+        font-size: .55rem;
+    }
+
+    #available-username {
+        font-size: .55rem;
+    }
 
     #homepage{
         font-size: 27px;
     }
+}
+
+@media only screen and (max-width: 245px) {
+
+    #available-password {
+        font-size: .5rem;
+    }
+
+    #available-username {
+        font-size: .5rem;
+    }
+
+
 }
