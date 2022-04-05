@@ -1,4 +1,9 @@
 
+#roomMinimum{
+    display:none;
+}
+
+
 #screenContN{
     margin:0 auto;
     width:250px;
@@ -13,18 +18,17 @@
     border-radius:20px;
 }
 
-#dice5 {
+.bb {
     padding: 10px 25px 10px 25px;
     /* box-shadow: 2px 3px rgb(208, 193, 193); */
     border: 1px solid white;
     font-size: 19px;
 }
 
-#dice10 {
-    padding: 10px 25px 10px 25px;
-    /* box-shadow: 2px 3px rgb(208, 193, 193); */
-    border: 1px solid white;
-    font-size: 19px;
+#freeOptions{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 
