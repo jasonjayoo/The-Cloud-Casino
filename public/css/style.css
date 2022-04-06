@@ -165,6 +165,11 @@ body {
         width: 50vw;
         /* height: 60vh; */
     }
+
+    #dashOptions {
+        width: 20vw;
+        
+    }
 }
 
 
@@ -179,6 +184,10 @@ body {
         width: 55vw;
         /* height: 60vh */
     }
+
+    #dashOptions {
+        width: 35vw;
+    }
 	
 }
 
@@ -192,6 +201,10 @@ body {
     #signupcard {
         width: 80vw;
         /* height: 60vh */
+    }
+
+    #dashOptions {
+        width: 35vw;
     }
 	
 }
@@ -215,6 +228,10 @@ body {
         width: 80vw;
         /* height: 60vh */
     }
+
+    #dashOptions {
+        width: 35vw;
+    }
 	
 }
 
@@ -225,6 +242,10 @@ body {
 
     #available-username {
         font-size: .75rem;
+    }
+
+    #dashOptions {
+        width: 35vw;
     }
 }
 
@@ -246,6 +267,10 @@ body {
         width: 80vw;
         /* height: 58vh; */
     }
+
+    #dashOptions {
+        width: 35vw;
+    }
 	
 }
 
@@ -261,6 +286,10 @@ body {
 
     #homepage{
         font-size: 37px;
+    }
+
+    #dashOptions {
+        max-width: 35vw;
     }
 }
 
