@@ -100,5 +100,5 @@ document.querySelector('#getCoinsN').addEventListener('click', earn);
 const noAccess = document.getElementById("noAccess");
 
 function no(){
-    noAccess.innerText="You have insufficient fund to bet in this room."
+    noAccess.innerText="you have insufficient funds to bet in this room."
 }
