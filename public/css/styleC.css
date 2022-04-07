@@ -125,6 +125,16 @@
     margin:5px;
 }
 
+.DbetF{
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 500;
+    border-radius:5px;
+    /* margin:5px; */
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
 .infoN2 {
     background-color: rgb(46, 46, 46);
     color: rgb(138, 138, 138);
@@ -132,9 +142,23 @@
     border-radius:5px;
     margin:5px;
 }
-.centN{
+.avChips{
     display:flex;
     justify-content:center;
+    margin-top: 32px;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+#noAccess {
+    margin-top: 15px;
+    color:#fff;
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 570px),(max-height: 380px){
