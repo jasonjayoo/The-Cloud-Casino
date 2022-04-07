@@ -21,15 +21,15 @@
     /* padding: 10px 25px 10px 25px; */
     /* box-shadow: 2px 3px rgb(208, 193, 193); */
     border: 1px solid white;
-    font-size: 19px; 
-    width: 60%;
+    font-size: 20px; 
+    width: 30%;
     margin: 5px;
 }
 
 #roomOptions {
     width: 100%;
     display: flex;
-     flex-wrap: wrap; 
+    flex-wrap: wrap; 
     justify-content: space-around;
 }
 
@@ -168,6 +168,37 @@
     color:#fff;
     font-size: 1.5em;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bb {
+        font-size: 16px; 
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .bb {
+        font-size: 13px; 
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .DbetF {
+        font-size: 22px; 
+    }
+
+    .avChips {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .bb {
+        font-size: 12px; 
+        width: 30%;
+    }
 }
 
 @media only screen and (max-width: 570px),(max-height: 380px){
