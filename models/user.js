@@ -27,6 +27,21 @@ user.init(
             allowNull: true,
             unique: false
         },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            unique: false
+        },
+        coincode: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            unique: false
+        },
+        videoon: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            unique: false
+        },
         tempCoupon: {
             type: DataTypes.INTEGER,
             allowNull: true,

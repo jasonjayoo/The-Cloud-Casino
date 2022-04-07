@@ -124,6 +124,43 @@ router.get('/dice10', async (req, res) => {
     }
 });
 
+//RENDER EMAIL COINS PAGE
+router.get('/bonus/:id', async (req,res)=>{
+
+    try {
+
+        const face = await user.findByPk(req.params.id);
+        if(!face){
+
+            res.render('bonus', {
+                pageTitle: '',
+                coinCollect: `<h2>Sorry but there seems to be an error with the link.</h2>`,
+            });
+        }else if(face.coincode==1){
+            res.render('bonus', {
+                pageTitle: '',
+                coinCollect: `<h2>It seems that you have already collected your free coins.</h2>`,
+            });
+        }else{
+            res.render('bonus', {
+                pageTitle: '',
+                coinCollect: `<button type='button' onclick=getBonus(${req.params.id})>Click here to acquire your coins</button>`,
+            });
+        }
+
+    }
+    catch (err) {
+        console.log(err);
+        res.status.apply(500).json(err);
+    }
+
+
+
+
+
+
+})
+
 
 //RENDER AD PAGE
 router.get('/adForCoin', async (req, res) => {
@@ -138,6 +175,36 @@ router.get('/adForCoin', async (req, res) => {
         res.status.apply(500).json(err);
     }
 });
+/*
+<a href="http://ourwebsite/bonus/${id}/${code}">click to get ur coins</a>
 
+//GET BONUS
+router.get('/bonus/:id/:code', async (req, res) => {
+    try {
+        if (id and code) 
+        change code
+        add coins 
 
+    
+
+        res.render('bonus', {
+            pageTitle: 'you got coins',
+            loggedIn: req.session.logged_in,
+            //posts
+        });
+        else 
+
+        res.render('bonus', {
+            pageTitle: 'no more coins for you',
+            loggedIn: req.session.logged_in,
+            //posts
+        });
+
+    } catch (err) {
+        res.status(500).json(err);
+        console.log(err);
+    }
+});
+
+*/
 module.exports = router;

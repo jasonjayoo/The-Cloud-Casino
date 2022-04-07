@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { user } = require('../../models');
 
 
-
+//start playing video
 router.put('/coins1',async (req,res) =>{
 
     try {
@@ -10,18 +10,44 @@ router.put('/coins1',async (req,res) =>{
         if (!req.session.logged_in) {
             res.status(401).json("user is not logged in");
             return
+
+
         }else{ 
 
-            let RANDO = Math.floor(Math.random()*10000000);
+            
+            const watcher = await user.findByPk(req.session.user_id);
+            
+            if(watcher.videoon==2){//check that the user is not already watching the video in another tab
+                res.status(400)
 
-            await user.update({
-                tempCoupon : RANDO},{
-                where: {id: req.session.user_id,},
-            });
+            }else{
 
-            setTimeout(()=>{
-                res.status(200).json({coupon:RANDO});
-            },17*1000)
+                let RANDO = Math.floor(Math.random()*10000000);
+
+                await user.update({//create temp coupon and set the status to "watching"
+                    tempCoupon : RANDO,
+                    videoon : 2,
+                },{
+                    where: {id: req.session.user_id,},
+                });
+
+
+                setTimeout(()=>{//after ten seconds set status to "not watching"
+                    user.update({
+                        videoon : 1,
+                    },{
+                        where: {id: req.session.user_id,},
+                    });;
+                },10*1000);
+
+
+
+
+                setTimeout(()=>{//after 15 seconds return the temporary coupon to get coins
+                    res.status(200).json({coupon:RANDO});
+                },15*1000);
+
+            }
 
             
         }
@@ -44,15 +70,15 @@ router.put('/coins2',async (req,res) =>{
         }else{ 
 
             const check = await user.findByPk(req.session.user_id);
-            let RANDO = check.tempCoupon;
+            let RANDO = check.tempCoupon;//check that the coupon matches
 
-            await user.update({
+            await user.update({//erase the coupon
                 tempCoupon : 0},{
                 where: {id: req.session.user_id,},
             });
 
             if(!(RANDO==req.body.v)){
-                res.status(404).json({message:'Problem authenticating ad playing'});//do better for the message lol, also display it if that error code
+                res.status(404).json({message:'Problem authenticating ad playing'});
 
             }else{
 
