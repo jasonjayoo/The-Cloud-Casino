@@ -21,10 +21,6 @@
     /* padding: 10px 25px 10px 25px; */
     /* box-shadow: 2px 3px rgb(208, 193, 193); */
     border: 1px solid white;
-<<<<<<< HEAD
-    font-size: 19px;
-    margin-bottom:10px;
-=======
     font-size: 19px; 
     width: 60%;
     margin: 5px;
@@ -35,7 +31,6 @@
     display: flex;
      flex-wrap: wrap; 
     justify-content: space-around;
->>>>>>> main
 }
 
 #freeOptions{
