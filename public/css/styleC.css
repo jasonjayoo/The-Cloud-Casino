@@ -18,10 +18,19 @@
 }
 
 .bb {
-    padding: 10px 25px 10px 25px;
+    /* padding: 10px 25px 10px 25px; */
     /* box-shadow: 2px 3px rgb(208, 193, 193); */
     border: 1px solid white;
-    font-size: 19px;
+    font-size: 19px; 
+    width: 60%;
+    margin: 5px;
+}
+
+#roomOptions {
+    width: 100%;
+    display: flex;
+     flex-wrap: wrap; 
+    justify-content: space-around;
 }
 
 #freeOptions{
