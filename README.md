@@ -17,7 +17,7 @@ An online casino where users will have to create an account to login in order to
 
 ## User Story:
 
-I like gambling but I dont like losing my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I get virtual money from winning and lose money when I lose. Therefore, I get the experience of possibly losing or winning money just like how a real gambling is without actually losing real money. If I run out of virtual money I have to watch a short video to acquire more virtual money. If i win enough money I will unlock different achivement status that will allow me to access other functionalities (higher limit tables, VIP Rooms, other games, etc.).
+I like gambling but I dont like losing my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I get virtual money from winning and lose money when I lose. Therefore, I get the experience of possibly losing or winning money just like how a real gambling experience is without actually losing real money. If I run out of virtual money I have the option to watch a short video in order to acquire more virtual funds. If i win enough money I will unlock accessibility to higher betting tiers that will allow me to access higher limit rooms.
 
 <br>
 
