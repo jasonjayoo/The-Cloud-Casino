@@ -135,16 +135,19 @@ router.get('/bonus/:id', async (req,res)=>{
             res.render('bonus', {
                 pageTitle: '',
                 coinCollect: `<h2>Sorry but there seems to be an error with the link.</h2>`,
+                loggedIn: req.session.logged_in,
             });
         }else if(face.coincode==1){
             res.render('bonus', {
                 pageTitle: '',
                 coinCollect: `<h2>It seems that you have already collected your free coins.</h2>`,
+                loggedIn: req.session.logged_in,
             });
         }else{
             res.render('bonus', {
                 pageTitle: '',
                 coinCollect: `<button type='button' onclick=getBonus(${req.params.id})>Click here to acquire your coins</button>`,
+                loggedIn: req.session.logged_in,
             });
         }
 

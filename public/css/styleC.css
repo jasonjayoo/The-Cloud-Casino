@@ -194,6 +194,10 @@
 #new-email {
     width: 50vw;
 }
+.bonusResultMessage{
+    font-size:30px;
+    color:navy;
+}
 
 .avChips{
     display:flex;
