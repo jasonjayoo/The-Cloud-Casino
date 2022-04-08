@@ -20,7 +20,7 @@ async function getBonus(collector){
 
                 setTimeout(()=>{
                     document.location.replace('/dashboard');
-                },1000)
+                },2000)
 
             })
         }else{
