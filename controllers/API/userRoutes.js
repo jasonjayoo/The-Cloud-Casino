@@ -4,7 +4,7 @@ const { user } = require('../../models');
 const nodemailer = require("nodemailer");
 require('dotenv').config();
 
-// const ourSite = "http://localhost:3001/"
+//const ourSite = "http://localhost:3001/"
 const ourSite = "https://glacial-reef-71102.herokuapp.com/"
 
 
@@ -57,7 +57,7 @@ router.get('/checkE/:email', async(req,res)=>{
 
 
 //email function
-async function sendIt(addy, faceName, faceId) {
+function sendIt(addy, faceName, faceId) {
                     
     let sub = `Hello ${faceName}, your coins arrived`;
     let coinLink =`<a href='${ourSite}bonus/${faceId}'>Click to get your coins!</a>`;
@@ -77,7 +77,7 @@ async function sendIt(addy, faceName, faceId) {
     });
  
     // send mail with defined transport object
-    await transporter.sendMail({
+    transporter.sendMail({
       from: process.env.MAIL_ADDY, // sender address
       to: addy, // list of receivers
       subject: sub, // Subject line
@@ -110,16 +110,21 @@ router.put('/email', async (req, res) => {
                 const face = await user.findOne({ where: { id: req.session.user_id }});
                 
 
-            
+                
                 sendIt(req.body.email,face.name,face.id);
+                res.status(200).json(({awesome:'job'}));
+                return;
+                
 
-                res.status(200);
-
-            }else res.status(405).json("Email already in use.");
+            }else {
+                res.status(405).json("Email already in use.");
+                return;
+            }
         }    
     }catch (err){
         res.status(422).json(err);
         console.log(err);
+        return;
     }
 });
 

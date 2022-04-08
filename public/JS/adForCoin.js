@@ -27,24 +27,25 @@ function enterEmail(){
 }
 async function addEmail(){
 
-    const Email = document.querySelector('#new-email').value;
-    console.log (Email);
-    console.log(typeof Email)
+    const email = document.querySelector('#new-email').value;
+    
+
     const addIt = await fetch('/API/user/email', {
         method: 'PUT',
         body: JSON.stringify({
-            email: Email
+            email
         }),
         headers: {
             'Content-Type': 'application/json'
         },
     });
-    if (addIt.status== 200 ) {////////////////////////////why not working????
-        warning3.style.color= "pink";
-        warning3.innerText = "You should recieve an email shortly to claim your free coins."
+    
+    if (addIt.ok ) {////////////////////////////why not working????
+        warning3.style.color= "navy";
+        warning3.innerText = "You should recieve an email shortly, check the junk folder."
         setTimeout(()=>{
             document.location.replace('/dashboard');
-        },2000);
+        },4000);
     } else {
         console.log("email fail")
     }
@@ -109,24 +110,24 @@ async function getCoins(e){
 
 async function verifyEmail(){
     
-    let email = document.getElementById('new-email').value;
+    let emailAddy = document.getElementById('new-email').value;
     let p;
 
-    if (email==""){
+    if (emailAddy==""){
         warning3.style.color= "black";
         warning3.innerText = "Enter your email address";
         p = false;//hide button
     }
     else{
 
-        const check = email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+        const check = emailAddy.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
         if (!check){
             warning3.style.color= "orange";
             warning3.innerText = "Enter a valid email address";
             p = false;//hide button
         }else{
 
-            const BB = await fetch(`/API/user/checkE/${email}`, {
+            const BB = await fetch(`/API/user/checkE/${emailAddy}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
