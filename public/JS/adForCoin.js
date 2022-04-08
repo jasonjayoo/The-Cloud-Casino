@@ -42,7 +42,7 @@ async function addEmail(){
     
     if (addIt.ok ) {////////////////////////////why not working????
         warning3.style.color= "navy";
-        warning3.innerText = "You should recieve an email shortly, check the junk folder."
+        warning3.innerText = "You should receive an email shortly, check the junk folder."
         setTimeout(()=>{
             document.location.replace('/dashboard');
         },4000);
