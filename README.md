@@ -11,26 +11,39 @@
 
 ## Description:
 
-An online casino where users will have to create an account to login in order to play Dice!. Users will be allowed to either login or create a username and password to enter the casino. After entering users will be able to decide between betting increments of 5, 10, 100, and 500 coins. If Users reach 1000 coins they will be able to enter the "VIP room". In the "VIP room" users can only make 1000 coin bets. If user runs out of funds they will have to watch a short video to gain 50 coins. If user registers email they can gain 1000 coins. User will be able to log out and coin fund will be saved. 
+We are an online casino where users are required to create an account to login in to our site and play Dice!. Users will be allowed to either login or create a new & uniquen username and password in order to enter the casino lobby. After entering, users are given the options of five different dice rooms: 5, 10, 100, 500 and $1000 coins. Our VIP gaming room is designated for users who have emassed at least 1000 coins. Users can view an advertisement video in order to gain 50 coins. If user registers an email with us, they can gain 1000 coins once they click on the link we provided in to their email address. Furthermore, Users will be able to log out of the sit and still retain the coins they've amassed. Whenever a user re-logs in to our site, the coins they've amassed will re-render to their account. 
 
 <br>
 
 ## User Story:
 
-I like gambling but I dont like losing my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I get virtual money from winning and lose money when I lose. Therefore, I get the experience of possibly losing or winning money just like how a real gambling experience is without actually losing real money. If I run out of virtual money I have the option to watch a short video in order to acquire more virtual funds. If i win enough money I will unlock accessibility to higher betting tiers that will allow me to access higher limit rooms.
+I like gambling but I dont want to risk my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I can gain virtual money from winning and lose it when I lose my wager. Therefore, I get the experience of possibly losing or winning money just like how a real gambling experience is, without actually losing real money. If I run out of my virtual money I have the options of watching a short video or registering my email in order to acquire more virtual funds. If I win enough money I will unlock accessibility to higher betting tiers that will allow me to access higher limit rooms.
 
 <br>
 
 ## Acceptance Criteria:
 
--Users must create a original username and password <br>
--This creates an account that is linked to their IP address and verified email address(confirmation code sent via email) <br>
--Users must authenticate themselves via verification code that will be sent to their email<br>
--Users starts the game with 500 chips(1 chip = 1 dollar - "NOT REAL MONEY")<br>
--Users can bet a minimum 5 chips and a maximum of 500 chips in the initial rookie table<br>
--If the user runs out of coins they will have to watch a short video to gain more coins<br>
--User can win from starting table (5, 10, 100, 500 bet), VIP table (1000 bet).<br>
--If the user is finished playing they can save their current chips count and log out<br>
+- Users must create a original username and password in order to login to our web application.
+<br>
+
+- Entering a unique username and password creates an account that is linked to their IP address along with the username and password they've created. 
+<br>
+-  A verified email address can be entered by the user in order to obtain more virtual funds
+<br>
+
+- Users starts the game with 500 chips(1 chip = 1 dollar - "NOT REAL MONEY")
+<br>
+
+- Users can bet a minimum 5 chips in the five hundred room, 10 in the one hundred dollar room or five hundred in the five hundred dollar room
+<br>
+
+- If the user runs out of coins they have the option to watch a short video or register their email in order to gain sdditional coins
+<br>
+
+- User can win from the starting room (5, 10, 100, 500 bet), the VIP room is the (1000 bet).
+<br>
+
+- If the user is finished playing they can save their current chips count and log out (their total funds will be store in the database for future plays)
 
 <br>
 
@@ -65,7 +78,7 @@ https://glacial-reef-71102.herokuapp.com/
 
 ## Installation:
 <br>
-      -  Clone the files from my github repository provided below. You will also need to have installed MySQL to your computer and have installed express-handlebars, express, sequelize, mysql2, dotenv, bcrypt, express-session, connect-session-sequelize and nodemon. 
+      -  Clone the files from my github repository provided below. You will also need to have installed MySQL to your computer and have installed express-handlebars, express, sequelize, mysql2, dotenv, bcrypt, nodemailer,express-session, connect-session-sequelize and nodemon. 
 
 <br>
   
@@ -115,7 +128,7 @@ Once downloaded, open the file in VS Code.
 
 <br>
 
-[Screenshot8](images/email-registration-screenshot.png)  "Email Registration: User can register email to gain access to 1000 free coins."
+[Screenshot8](images/email-registration-screenshot.png)  "Email Registration: User can register email to obtain 1000 free coins."
 <img src="images/email-registration-screenshot.png">
 
 
@@ -126,21 +139,25 @@ Once downloaded, open the file in VS Code.
   
 ## Contributions:
 <br>
-Reach us at our github provided below
+Reach us at our github accounts provided below
 
 <br>
 <br>
   
 ## Tests: 
 <br>
-Install MySQL to your computer. You will also need to have installed MySQL to your computer and have installed express-handlebars, express, sequelize, mysql2, dotenv, bcrypt, express-session, connect-session-sequelize and nodemon. .
+Install MySQL to your computer. You will also need to have installed MySQL to your computer and have installed express-handlebars, express, sequelize, mysql2, dotenv, bcrypt, nodemailer, express-session, connect-session-sequelize and nodemon. .
   
 <br>
 <br>
 
 ## Credits:
 <br>
+This project would not have been possible without the hardwork and effort put forth by our outstanding game developer Mr.Nicholas V. 
 
+The credit for this projects program's structure, file/folder MVC system along with the styling and deployment of this application goes to Mr. Jason Yoo.
+
+Thank you to Mr. Brett Hockridge for his enthusiasm and positive outlook. 
 
 <br>
 
