@@ -1,79 +1,47 @@
-
-.r{
-    border-radius: 5px;
-	border: 1px solid rgb(209, 180, 13);
-	position: absolute;
-	
-	
-	
+.r {
+  border-radius: 5px;
+  border: 1px solid rgb(209, 180, 13);
+  position: absolute;
 }
 
-#yourBet{
-	position: absolute;
-	bottom: 125px;
+#yourBet {
+  position: absolute;
+  bottom: 125px;
 }
 
-#placeYourBet{
-	position: absolute;
-	bottom: 200px;
-	/* left: 960px; */
+#placeYourBet {
+  position: absolute;
+  bottom: 200px;
 }
 
-#betButtons{
-	position: absolute;
-	bottom: 170px;
-	/* left: 940px; */
+#betButtons {
+  position: absolute;
+  bottom: 170px;
 }
 
-#backToLobby{
-	position: absolute;
-	bottom: 100px;
-	/* left: 990px; */
+#backToLobby {
+  position: absolute;
+  bottom: 100px;
 }
 
-#availableChips{
-	position: absolute;
-	bottom: 250px;
-
+#availableChips {
+  position: absolute;
+  bottom: 250px;
 }
 
-#chips{
-	position: absolute;
-	bottom: 235px;
+#chips {
+  position: absolute;
+  bottom: 235px;
 }
 
-button:hover{
-	background-color: lightgray;
+button:hover {
+  background-color: lightgray;
 }
 
-
-#b1{
-	color:red;
-}
-#b1{
-	color:red;
-}
-#b1{
-	color:red;
-}
-#b1{
-	color:red;
+#b1 {
+  color: red;
 }
 
-
-.loader{
-	display:none;
+.loader {
+  display: none;
 }
-/*
-canvas, button{
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	margin-top:20px;
-	font-size:50px;
-	
-}
-
-
-*/
-

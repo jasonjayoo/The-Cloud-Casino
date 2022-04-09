@@ -1,4 +1,4 @@
 //IMPORT MODELS
-const user = require('./user');
+const user = require("./user");
 
-module.exports = {user}
+module.exports = { user };

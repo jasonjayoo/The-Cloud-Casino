@@ -1,589 +1,526 @@
-#roomMinimum{
-    display:none;
+#roomMinimum {
+  display: none;
 }
 
-
-#screenContN{
-    margin:0 auto;
-    width:250px;
-    height:250px;
-    margin-bottom:10px;
-
+#screenContN {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
 }
 
-#video1{
-    width:560;
-    height:315;
-    border-radius:20px;
+#video1 {
+  width: 560;
+  height: 315;
+  border-radius: 20px;
 }
 
 .bb {
-    /* padding: 10px 25px 10px 25px; */
-    /* box-shadow: 2px 3px rgb(208, 193, 193); */
-    border-radius: 10px;
-    /* box-shadow: #fff 0px 5px 15px; */
-    /* box-shadow: rgba(248, 246, 246, 0.25) 0px 54px 55px, rgba(248, 246, 246, 0.25) 0px -12px 30px, rgba(248, 246, 246, 0.25) 0px 4px 6px, rgba(248, 246, 246, 0.25) 0px 12px 13px, rgba(248, 246, 246, 0.25) 0px -3px 5px; */
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border: 1px solid white;
-    font-size: 20px; 
-    width: 30%;
-    margin: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: 1px solid white;
+  font-size: 20px;
+  width: 30%;
+  margin: 5px;
 }
 
 #roomOptions {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-#freeOptions{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+#freeOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-#viewScreenN{
-    margin-top: 16.5px;
-    margin-bottom:10px;
-    width:250px;
-    height:250px;
-
+#viewScreenN {
+  margin-top: 16.5px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 250px;
 }
-/*
-#coinPage{
-    
-}
-*/
-#adScreenN{
-    height:315;
-    width:560;
-    position:relative;
-    margin: 0 auto ;
-    display:none;
-}
-#adN{
-    
-    margin: 0 auto ;
-    position:absolute;
-    z-index:1;
-}
-#payMeN{
-    
 
-    position:absolute;
-    top:50%;
-    left:50%;
-    z-index:2;
-
-
+#adScreenN {
+  height: 315;
+  width: 560;
+  position: relative;
+  margin: 0 auto;
+  display: none;
 }
+#adN {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+}
+#payMeN {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
 #claimCoins {
-    border-radius: 5px;
-    position:absolute;
-    height:100px;
-    width:400px;
-    margin-top:-50px;
-    margin-left:-200px;
-    border: 2px solid;
-    background-color: black;
-    color: #fff;
-    font-size:30;
+  border-radius: 5px;
+  position: absolute;
+  height: 100px;
+  width: 400px;
+  margin-top: -50px;
+  margin-left: -200px;
+  border: 2px solid;
+  background-color: black;
+  color: #fff;
+  font-size: 30;
 }
 
-#backToLobby2{
-    background-color: black;
-    color: #fff;
-    border: 2px solid #fff;
-
+#backToLobby2 {
+  background-color: black;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 #playVideoN {
-    background-color: black;
-    color: #fff;
-    border: 2px solid #fff;
-    margin-left: 10px;
+  background-color: black;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-left: 10px;
 }
 
 #registerN {
-    background-color: black;
-    color: #fff;
-    border: 2px solid #fff;
-    margin-left: 10px;
+  background-color: black;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-left: 10px;
 }
 
-#ourButtons{
-    display:flex;
-    justify-content:center;
+#ourButtons {
+  display: flex;
+  justify-content: center;
 }
-#ourButtons > *{
-    border-radius: 5px;
-    
-}
-
-
-.boardN{
-    display:flex;
-    flex-wrap:wrap;
-    
-    font-size: 25px;
+#ourButtons > * {
+  border-radius: 5px;
 }
 
-.rN{
-    border-radius: 5px;
-	border: 1px solid rgb(209, 180, 13);
-	position: absolute;
-	
-	
+.boardN {
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: 25px;
 }
 
-.controlsN{
-    padding:10px;
-    margin:0 auto;
-
+.rN {
+  border-radius: 5px;
+  border: 1px solid rgb(209, 180, 13);
+  position: absolute;
 }
 
-.infoN2 > .flat{
-    display:inline;
-    
+.controlsN {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.infoN2 > .flat {
+  display: inline;
 }
 
 .yourBetN {
-
-    padding-left:10px;
+  padding-left: 10px;
 }
 
-.DbetN{
-    border-radius:5px;
-    margin:5px;
+.DbetN {
+  border-radius: 5px;
+  margin: 5px;
 }
 
-.DbetF{
-    margin: 0 auto;
-    font-size: 28px;
-    font-weight: 500;
-    border-radius:5px;
-    /* margin:5px; */
-    padding-left: 38px;
-    padding-right: 38px;
+.DbetF {
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 .infoN2 {
-    background-color: rgb(46, 46, 46);
-    /* color: rgb(138, 138, 138); */
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 2px solid  rgb(138, 138, 138);
-    border-radius:5px;
-    margin:5px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid rgb(138, 138, 138);
+  border-radius: 5px;
+  margin: 5px;
 }
 
 #available-email {
-    color: black;
-    border: 2px solid rgb(82, 78, 78);
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+  color: black;
+  border: 2px solid rgb(82, 78, 78);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #new-email {
-    width: 50vw;
-}
-.bonusResultMessage{
-    font-size:30px;
-    color:navy;
+  width: 50vw;
 }
 
-.avChips{
-    display:flex;
-    justify-content:center;
-    margin-top: 32px;
-    padding: 5px 10px 5px 10px;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: black;
-    
+.bonusResultMessage {
+  font-size: 30px;
+  color: navy;
+}
+
+.avChips {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: black;
 }
 
 #noAccess {
-    margin-top: 15px;
-    color:red;
-    font-size: 1.5em;
-    font-weight: 500;
-    /* border: 2px solid #fff; */
-    /* padding: 8px; */
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    background-color: whitesmoke;
+  margin-top: 15px;
+  color: red;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
 }
 
 @media only screen and (max-width: 1000px) {
-    .bb {
-        font-size: 16px; 
-        width: 33%;
-    }
-    #noAccess {
-        font-size: 11px;
-    }
+  .bb {
+    font-size: 16px;
+    width: 33%;
+  }
+  #noAccess {
+    font-size: 11px;
+  }
 }
-
 
 @media only screen and (max-width: 958px) {
-
-    #noAccess {
-        font-size: 10px;
-    }
+  #noAccess {
+    font-size: 10px;
+  }
 }
 
-
 @media only screen and (max-width: 880px) {
-
-    #noAccess {
-        font-size: 9px;
-    }
+  #noAccess {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 859px) {
-
-    #noAccess {
-        font-size: 8.5px;
-    }
+  #noAccess {
+    font-size: 8.5px;
+  }
 }
 
 @media only screen and (max-width: 874px) {
-    .bb {
-        font-size: 11px; 
-        width: 30%;
-    }
+  .bb {
+    font-size: 11px;
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 844px) {
-    .bb {
-        font-size: 10px; 
-        width: 30%;
-    }
+  .bb {
+    font-size: 10px;
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
-    .bb {
-        font-size: 13px; 
-        width: 30%;
-    }
+  .bb {
+    font-size: 13px;
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .DbetF {
-        font-size: 22px; 
-    }
+  .DbetF {
+    font-size: 22px;
+  }
 
-    .avChips {
-        font-size: 17px;
-    }
+  .avChips {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 535px) {
-    .bb {
-        font-size: 12px; 
-        width: 30%;
-    }
+  .bb {
+    font-size: 12px;
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 492px) {
-    .bb {
-        font-size: 11px; 
-        width: 50%;
-    }
+  .bb {
+    font-size: 11px;
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 446px) {
-
-    #noAccess {
-        font-size: 9px;
-    }
+  #noAccess {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-    .avChips {
-        font-size: 15px; 
-    }
+  .avChips {
+    font-size: 15px;
+  }
 
-    .DbetF {
-        font-size: 12px;
-    }
+  .DbetF {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 413px) {
-    .DbetF {
-        font-size: 10px;
-    }
+  .DbetF {
+    font-size: 10px;
+  }
 }
-
-
 
 @media only screen and (max-width: 452px) {
-    .DbetF {
-        font-size: 18px; 
-    }
+  .DbetF {
+    font-size: 18px;
+  }
 }
 
-@media only screen and (max-width: 570px),(max-height: 380px){
-    #video1{
-        width:392;
-        height:220;
-        
-    }
-    #adScreenN{
-        width:392;
-        height:220;  
-    }
+@media only screen and (max-width: 570px), (max-height: 380px) {
+  #video1 {
+    width: 392;
+    height: 220;
+  }
+  #adScreenN {
+    width: 392;
+    height: 220;
+  }
 }
-
 
 @media only screen and (max-width: 412px) {
-    .DbetF {
-        font-size: 13px; 
-    }
+  .DbetF {
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 401px) {
-
-    #noAccess {
-        font-size: 8px;
-    }
+  #noAccess {
+    font-size: 8px;
+  }
 }
 
-@media only screen and (max-width: 400px){
-    #video1{
-        width:336;
-        height:189;
-    }
-    #adScreenN{
-        width:336;
-        height:189;  
-    }
-}
-
-
-@media only screen and (max-width: 378px) {
-
-    .avChips{
-        font-size: 12px;
-    }
-
-    .DbetF {
-        font-size: 13px; 
-    }
+@media only screen and (max-width: 400px) {
+  #video1 {
+    width: 336;
+    height: 189;
+  }
+  #adScreenN {
+    width: 336;
+    height: 189;
+  }
 }
 
 @media only screen and (max-width: 378px) {
-    
-    .DbetF {
-        font-size: 12px; 
-    }
+  .avChips {
+    font-size: 12px;
+  }
 
-    #noAccess {
-        font-size: 7.8px;
-    }
+  .DbetF {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .DbetF {
+    font-size: 12px;
+  }
+  #noAccess {
+    font-size: 7.8px;
+  }
 }
 
 @media only screen and (max-width: 369px) {
-
-    #noAccess {
-        font-size: 5px;
-    }
+  #noAccess {
+    font-size: 5px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-
-    #noAccess {
-        font-size: 4px;
-    }
+  #noAccess {
+    font-size: 4px;
+  }
 }
 
-
 @media only screen and (max-width: 446px) {
-
-    #noAccess {
-        font-size: 6px;
-    }
+  #noAccess {
+    font-size: 6px;
+  }
 }
 
 @media only screen and (max-width: 351px) {
-    
-    .DbetF {
-        font-size: 10px; 
-    }
+  .DbetF {
+    font-size: 10px;
+  }
 }
 
-
-@media only screen and (max-width: 330px){
-    #video1{
-        width:308;
-        height:173;
-    }
-    #adScreenN{
-        width:308;
-        height:173;  
-    }
+@media only screen and (max-width: 330px) {
+  #video1 {
+    width: 308;
+    height: 173;
+  }
+  #adScreenN {
+    width: 308;
+    height: 173;
+  }
 }
-@media only screen and (max-width: 330px){
-    #video1{
-        width:308;
-        height:173;
-    }
-    #adScreenN{
-        width:308;
-        height:173;  
-    }
+
+@media only screen and (max-width: 330px) {
+  #video1 {
+    width: 308;
+    height: 173;
+  }
+  #adScreenN {
+    width: 308;
+    height: 173;
+  }
 }
 
 @media only screen and (max-width: 324px) {
-
-    #noAccess {
-        font-size: 4px;
-    }
+  #noAccess {
+    font-size: 4px;
+  }
 }
-
 
 @media only screen and (max-width: 313px) {
-
-    #noAccess {
-        font-size: 3.8px;
-    }
+  #noAccess {
+    font-size: 3.8px;
+  }
 }
 
-@media only screen and (max-width: 250px){
-    #video1{
-        width:196;
-        height:110;
-    }
-    #adScreenN{
-        width:196;
-        height:110;  
-    }
+@media only screen and (max-width: 250px) {
+  #video1 {
+    width: 196;
+    height: 110;
+  }
+  #adScreenN {
+    width: 196;
+    height: 110;
+  }
 }
 
 @media only screen and (max-width: 316px) {
-    .avChips{
-        font-size: 9px;
-    }
-    .DbetF {
-        font-size: 9px; 
-    }
+  .avChips {
+    font-size: 9px;
+  }
+  .DbetF {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 312px) {
-
-    #noAccess {
-        font-size: 6.5px;
-    }
+  #noAccess {
+    font-size: 6.5px;
+  }
 }
 
-@media only screen and (max-height: 450px){
-
-    #adScreenN{
-        margin-top:-70; 
-    }
+@media only screen and (max-height: 450px) {
+  #adScreenN {
+    margin-top: -70;
+  }
 }
-
 
 @media only screen and (max-width: 410px), (max-height: 410px) {
+  .boardN {
+    font-size: 20px;
+  }
+  .DbetN {
+    margin: 3px;
+  }
 
-    .boardN{
-        
-        font-size: 20px;
-    }
-    .DbetN{
-        margin:3px;
-    }
-
-    #screenContN{
-        width:200px;
-        height:200px;
-    }
-    #viewScreenN{
-        width:200px;
-        height:200px;
-    }
-	
+  #screenContN {
+    width: 200px;
+    height: 200px;
+  }
+  #viewScreenN {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 450px), (max-height: 450px) {
-    .boardN {
-        margin-top: -50px;
-    }
+  .boardN {
+    margin-top: -50px;
+  }
 }
 
-
-
 @media only screen and (max-width: 350px), (max-height: 350px) {
-    .boardN {
-        margin-top: -70px;
-    }
+  .boardN {
+    margin-top: -70px;
+  }
 }
 
 @media only screen and (max-width: 300px), (max-height: 300px) {
-    .boardN{
-        
-        font-size: 15px;
-    }
+  .boardN {
+    font-size: 15px;
+  }
+  .DbetN {
+    margin: 1px;
+  }
+  #screenContN {
+    width: 100px;
+    height: 100px;
+  }
 
-    .DbetN{
-        margin:1px;
-    }
-    #screenContN{
-        width:100px;
-        height:100px;
-    }
-
-    #viewScreenN{
-        width:100px;
-        height:100px;
-    }
-    
-	
+  #viewScreenN {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 300px) and (max-height: 300px) {
-    .boardN{
-        
-        font-size: 10px;
-    }
+  .boardN {
+    font-size: 10px;
+  }
 
-    .DbetN{
-        margin:1px;
-    }
-    #screenContN{
-        width:100px;
-        height:100px;
-    }
+  .DbetN {
+    margin: 1px;
+  }
+  #screenContN {
+    width: 100px;
+    height: 100px;
+  }
 
-    #viewScreenN{
-        width:100px;
-        height:100px;
-    }
-    
+  #viewScreenN {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 290px) {
-
-    #noAccess {
-        font-size: 4.5px;
-    }
+  #noAccess {
+    font-size: 4.5px;
+  }
 }
 
 @media only screen and (max-width: 254px) {
-    .avChips{
-        font-size: 7px;
-    }
-    .DbetF {
-        font-size: 8px; 
-    }
+  .avChips {
+    font-size: 7px;
+  }
+  .DbetF {
+    font-size: 8px;
+  }
 }
