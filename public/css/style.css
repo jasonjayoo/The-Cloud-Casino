@@ -1,336 +1,256 @@
-*  {
-    font-family: 'Oswald', sans-serif;
+* {
+  font-family: "Oswald", sans-serif;
 }
-/*
-#moneyrain {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#body {
-    position: absolute;
-    top: 0;
-    left: 0;
-} 
-
-body {
-    /* background-image:url("/casinologo5.png"); 
-    /* background-image:url("/casinodice.jpg"); 
-    /* background-repeat: no-repeat;
-    background-position: center center; 
-
-    /* background-size: cover; 
-    /* background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-  
-}*/
 
 .bannerC {
+  height: 100%;
+  width: 100%;
 
-    height: 100%;
-    width: 100%;
-
-    background-image:url("/casinologo5.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    
-    
-    
+  background-image: url("/casinologo5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
 .bannerA {
-    background: linear-gradient( 0deg, rgb(46, 46, 46), rgb(180, 180, 180));
-    background-size: 2000px 1000px;
-    
-    background-repeat: no-repeat;
-    
-    
-    
+  background: linear-gradient(0deg, rgb(46, 46, 46), rgb(180, 180, 180));
+  background-size: 2000px 1000px;
+
+  background-repeat: no-repeat;
 }
-
-
 
 .bannerB {
-    background-image:url("/casinodiceresized1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* background-position: center; */
-    
+  background-image: url("/casinodiceresized1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: center; */
 }
 
-/* nav {
-    background-image: url('/images/casinofloor1.jpg');
-} */
-
 #mainbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: linear-gradient(217deg, rgb(138, 138, 138), rgb(85, 83, 83)); 
-    /* background: linear-gradient(217deg, #224bd4, #4f13dd); 
-    background-image:url("/navbar4N.jpg");
-    */
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; 
-    background-position: center;
-     margin-bottom: 2px; */
-    
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(217deg, rgb(138, 138, 138), rgb(85, 83, 83));
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #home {
-    font-size: 20px;
-    font-weight: 475;
+  font-size: 20px;
+  font-weight: 475;
 }
 
 #casino {
-    font-size: 20px;
-    margin-left: 2px;
-    font-weight: 475;
-
+  font-size: 20px;
+  margin-left: 2px;
+  font-weight: 475;
 }
 
 #activelogin {
-    font-size: 20px;
-    font-weight: 475;
+  font-size: 20px;
+  font-weight: 475;
 }
 
 #logout {
-    font-size: 20px;
-    font-weight: 475;
+  font-size: 20px;
+  font-weight: 475;
 }
 
-#inactivelogin{
-    font-size: 20px;
-    font-weight: 475;
+#inactivelogin {
+  font-size: 20px;
+  font-weight: 475;
 }
 
 #homepage {
-    background-color: rgb(46, 46, 46);
-    color:  #FFF;
-    font-size: 47px;
-    border-radius: 15px;
-    border: 3px solid  rgb(138, 138, 138);
-    font-weight: 550;
-
+  background-color: rgb(46, 46, 46);
+  color: #fff;
+  font-size: 47px;
+  border-radius: 15px;
+  border: 3px solid rgb(138, 138, 138);
+  font-weight: 550;
 }
 
 #moneyrain {
-    margin-top: 25px;
-    width: 50vh
+  margin-top: 25px;
+  width: 50vh;
 }
 
 #logincard {
-    width: 32vw;
-    /* height: 45vh; */
+  width: 32vw;
 }
 
 #signupcard {
-    width: 35vw;
-    /* height: 55vh; */
+  width: 35vw;
 }
 
 #maincard {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 #sign-up-form {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #login-form {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #available-username {
-    text-align: center;
+  text-align: center;
 }
 
-#available-password{
-    text-align: center;
+#available-password {
+  text-align: center;
 }
-
 
 @media only screen and (max-width: 999px) {
-    #logincard {
-        width: 48vw;
-        /* height: 50vh; */
-    }
+  #logincard {
+    width: 48vw;
+  }
 
-    #signupcard {
-        width: 50vw;
-        /* height: 60vh; */
-    }
+  #signupcard {
+    width: 50vw;
+  }
 
-    #dashOptions {
-        width: 20vw;
-        
-    }
+  #dashOptions {
+    width: 20vw;
+  }
 }
 
-
 @media only screen and (max-width: 777px) {
+  #logincard {
+    width: 55vw;
+  }
 
-    #logincard {
-        width: 55vw;
-        /* height: 50vh */
-    }
-    
-    #signupcard {
-        width: 55vw;
-        /* height: 60vh */
-    }
+  #signupcard {
+    width: 55vw;
+  }
 
-    #dashOptions {
-        width: 35vw;
-    }
-	
+  #dashOptions {
+    width: 35vw;
+  }
 }
 
 @media only screen and (max-width: 650px) {
+  #logincard {
+    width: 70vw;
+  }
 
-    #logincard {
-        width: 70vw;
-        /* height: 50vh */
-    }
-    
-    #signupcard {
-        width: 80vw;
-        /* height: 60vh */
-    }
+  #signupcard {
+    width: 80vw;
+  }
 
-    #dashOptions {
-        width: 35vw;
-    }
-	
+  #dashOptions {
+    width: 35vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  #available-password {
+    font-size: 0.8rem;
+  }
 
-    #available-password {
-        font-size: .8rem;
-    }
+  #available-username {
+    font-size: 0.8rem;
+  }
 
-    #available-username {
-        font-size: .8rem;
-    }
+  #logincard {
+    width: 80vw;
+  }
 
-    #logincard {
-        width: 80vw;
-        /* height: 50vh */
-    }
-    
-    #signupcard {
-        width: 80vw;
-        /* height: 60vh */
-    }
+  #signupcard {
+    width: 80vw;
+  }
 
-    #dashOptions {
-        width: 35vw;
-    }
-	
+  #dashOptions {
+    width: 35vw;
+  }
 }
 
 @media only screen and (max-width: 390px) {
-    #available-password {
-        font-size: .75rem;
-    }
+  #available-password {
+    font-size: 0.75rem;
+  }
 
-    #available-username {
-        font-size: .75rem;
-    }
+  #available-username {
+    font-size: 0.75rem;
+  }
 
-    #dashOptions {
-        width: 35vw;
-    }
+  #dashOptions {
+    width: 35vw;
+  }
 }
 
 @media only screen and (max-width: 347px) {
+  #available-password {
+    font-size: 0.7rem;
+  }
 
-    #available-password {
-        font-size: .7rem;
-    }
+  #available-username {
+    font-size: 0.7rem;
+  }
+  #logincard {
+    width: 80vw;
+  }
 
-    #available-username {
-        font-size: .7rem;
-    }
-    #logincard {
-        width: 80vw;
-        /* height: 50vh; */
-    }
-    
-    #signupcard {
-        width: 80vw;
-        /* height: 58vh; */
-    }
+  #signupcard {
+    width: 80vw;
+  }
 
-    #dashOptions {
-        width: 35vw;
-    }
-	
+  #dashOptions {
+    width: 35vw;
+  }
 }
 
 @media only screen and (max-width: 320px) {
+  #available-password {
+    font-size: 0.61rem;
+  }
 
-    #available-password {
-        font-size: .61rem;
-    }
+  #available-username {
+    font-size: 0.61rem;
+  }
 
-    #available-username {
-        font-size: .61rem;
-    }
+  #homepage {
+    font-size: 37px;
+  }
 
-    #homepage{
-        font-size: 37px;
-    }
-
-    #dashOptions {
-        max-width: 35vw;
-    }
+  #dashOptions {
+    max-width: 35vw;
+  }
 }
 
 @media only screen and (max-width: 299px) {
+  #logincard {
+    width: 80vw;
+  }
 
-    #logincard {
-        width: 80vw;
-        /* height: 50vh */
-    }
-    
-    #signupcard {
-        width: 80vw;
-        /* height: 58vh */
-    }
-	
+  #signupcard {
+    width: 80vw;
+  }
 }
 
 @media only screen and (max-width: 270px) {
+  #available-password {
+    font-size: 0.55rem;
+  }
 
-    #available-password {
-        font-size: .55rem;
-    }
+  #available-username {
+    font-size: 0.55rem;
+  }
 
-    #available-username {
-        font-size: .55rem;
-    }
-
-    #homepage{
-        font-size: 27px;
-    }
+  #homepage {
+    font-size: 27px;
+  }
 }
 
 @media only screen and (max-width: 245px) {
+  #available-password {
+    font-size: 0.5rem;
+  }
 
-    #available-password {
-        font-size: .5rem;
-    }
-
-    #available-username {
-        font-size: .5rem;
-    }
-
-
+  #available-username {
+    font-size: 0.5rem;
+  }
 }
