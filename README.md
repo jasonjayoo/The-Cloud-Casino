@@ -55,7 +55,6 @@ I like gambling but I dont want to risk my hard earned money. So, I want a progr
   * [Usage](#usage)
   * [Contributions](#contributions)
   * [Tests](#tests)
-  * [Credits](#credits)
   * [Authors](#authors)
   * [Questions](#questions)
 
@@ -151,15 +150,7 @@ Install MySQL to your computer. You will also need to have installed MySQL to yo
 <br>
 <br>
 
-## Credits:
-<br>
-This project would not have been possible without the hardwork and effort put forth by our outstanding game developer Mr.Nicholas V. 
 
-The credit for this projects program's structure, file/folder MVC system along with the styling and deployment of this application goes to Mr. Jason Yoo.
-
-Thank you to Mr. Brett Hockridge for his enthusiasm and positive outlook. 
-
-<br>
 
 ## Authors:
 
