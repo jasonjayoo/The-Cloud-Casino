@@ -11,13 +11,13 @@
 
 ## Description:
 
-We are an online casino where users are required to create an account to login in to our site and play Dice!. Users will be allowed to either login or create a new & uniquen username and password in order to enter the casino lobby. After entering, users are given the options of five different dice rooms: 5, 10, 100, 500 and $1000 coins. Our VIP gaming room is designated for users who have emassed at least 1000 coins. Users can view an advertisement video in order to gain 50 coins. If user registers an email with us, they can gain 1000 coins once they click on the link we provided in to their email address. Furthermore, Users will be able to log out of the sit and still retain the coins they've amassed. Whenever a user re-logs in to our site, the coins they've amassed will re-render to their account. 
+We are an online casino where users are required to create an account to login in to our site and play Dice!. Users will be allowed to either login or create a new & unique username and password in order to enter the casino lobby. After entering, users are given the options of five different dice rooms: [5, 10, 100, 500 and 1000 coins]. Our VIP gaming room is designated for users who have emassed at least 1000 coins. Users can view an advertisement video in order to gain 50 coins. If users register an email with us, they can gain 1000 coins when they click on the link we provided in to their email address. Furthermore, users can log out of the site and still retain the coins they've amassed. Whenever a user re-logs in to our site, the coins they've amassed will re-render to their account. 
 
 <br>
 
 ## User Story:
 
-I like gambling but I dont want to risk my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I can gain virtual money from winning and lose it when I lose my wager. Therefore, I get the experience of possibly losing or winning money just like how a real gambling experience is, without actually losing real money. If I run out of my virtual money I have the options of watching a short video or registering my email in order to acquire more virtual funds. If I win enough money I will unlock accessibility to higher betting tiers that will allow me to access higher limit rooms.
+I like gambling but I dont want to risk my hard earned money. So, I want a program that can recreate the experience of gambling without actually risking my funds. I want a game where I can obtain virtual money from winning and lose it when I lose my bet. Therefore, I get the experience of possibly losing or winning money just like how a real gambling experience is, without actually losing real money. If I run out of my virtual coins, I have the options of watching a short video or registering my email in order to obtain more virtual funds. If I win enough money I will unlock accessibility to higher betting tiers that will allow me to access higher limit rooms.
 
 <br>
 
