@@ -77,7 +77,13 @@ https://glacial-reef-71102.herokuapp.com/
 
 ## Installation:
 <br>
-      -  Clone the files from my github repository provided below. You will also need to have installed MySQL to your computer and have installed express-handlebars, express, sequelize, mysql2, dotenv, bcrypt, nodemailer,express-session, connect-session-sequelize and nodemon. 
+      To run locally, clone the repo, and run npm install in the same folder.<br>
+      Add a .env file containing:<br>
+      DB_NAME=casino_db<br>
+      DB_PW=...your mysql password...<br>
+      DB_USER=root<br>
+      MAIL_PW=...your email password (for an email service that allows apps to log in)...<br>
+      MAIL_ADDY=...your email address...<br>
 
 <br>
   
@@ -145,8 +151,7 @@ Reach us at our github accounts provided below
   
 ## Tests: 
 <br>
-Install MySQL to your computer. You will also need to have installed MySQL to your computer and have installed express-handlebars, express, sequelize, mysql2, dotenv, bcrypt, nodemailer, express-session, connect-session-sequelize and nodemon. .
-  
+No tests have been implemented at this time.
 <br>
 <br>
 
