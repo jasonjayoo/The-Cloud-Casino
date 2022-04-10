@@ -3,8 +3,10 @@ const { user } = require("../../models");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
+
+///these urls are for the emailed link
 //const ourSite = "http://localhost:3001/"
-const ourSite = "https://glacial-reef-71102.herokuapp.com/";
+const ourSite = "https://glacial-reef-71102.herokuapp.com/"; 
 
 //verify that name is unique
 router.get("/check/:id", async (req, res) => {
@@ -42,20 +44,23 @@ router.get("/checkE/:email", async (req, res) => {
   }
 });
 
-//email function
+/////////////////////////////////////////////////////////////////////
+//email function/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 function sendIt(addy, faceName, faceId) {
+  //generate subject and content(link)
   let sub = `Hello ${faceName}, your coins arrived`;
   let coinLink = `<a href='${ourSite}bonus/${faceId}'>Click to get your coins!</a>`;
-  let plaintext = "Click to get your coins!";
+  let plaintext = "Click to get your coins!";//not used 
 
-  // create reusable transporter object using the default SMTP transport
+  // create reusable transporter object using SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "smtp.zoho.com",
+    host: "smtp.zoho.com",//zoho email allows apps to login using only username and password
     port: 465,
     secure: true,
     auth: {
-      user: process.env.MAIL_ADDY, // generated ethereal user
-      pass: process.env.MAIL_PW, // generated ethereal password
+      user: process.env.MAIL_ADDY, 
+      pass: process.env.MAIL_PW, 
     },
   });
 
@@ -72,6 +77,7 @@ function sendIt(addy, faceName, faceId) {
 }
 
 //email route
+
 router.put("/email", async (req, res) => {
   try {
     if (!req.session.logged_in) {
@@ -91,7 +97,7 @@ router.put("/email", async (req, res) => {
 
         const face = await user.findOne({ where: { id: req.session.user_id } });
 
-        sendIt(req.body.email, face.name, face.id);
+        sendIt(req.body.email, face.name, face.id);//send the email with user name (for subject) and id (for link)
         res.status(200).json({ awesome: "job" });
         return;
       } else {
@@ -114,11 +120,12 @@ router.put("/bonus", async (req, res) => {
     if (!face) {
       res.status(200).json({ message: "Problem with link" });
       return;
-    } else if (face.coincode == 1) {
+    } else if (face.coincode == 1) {//check that this account has not collected coins (1 is collected, 2 is not collected)
       res
         .status(200)
-        .json({ message: "It seems you have already collected your bonus" });
+        .json({ message: "It seems you have already collected your bonus" });//send message 
     } else {
+      //update coins
       let total = face.coins + 1000;
 
       await user.update(
@@ -133,7 +140,7 @@ router.put("/bonus", async (req, res) => {
 
       res
         .status(200)
-        .json({ message: `Congratulations, you now have ${total} coins!` });
+        .json({ message: `Congratulations, you now have ${total} coins!` });//send message
     }
   } catch {
     res.status(400);
@@ -147,9 +154,9 @@ router.post("/signup", async (req, res) => {
     let Body = {
       name: req.body.name,
       password: req.body.password,
-      coincode: 2,
-      videoon: 1,
-      coins: 500,
+      coincode: 2,//coins not collected
+      videoon: 1,//video not being watched
+      coins: 500,//500 chips to start
     };
     const userData = await user.create(Body);
 
