@@ -5,9 +5,6 @@
 
 <br>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  
-<br>
 
 ## Description and Link:
 
@@ -21,19 +18,12 @@ An online casino (no real money, just for fun). Still a lot we plan to add, but 
 
 ## Table of contents:
 
-  * [License](#license)
+  
   * [Installation](#installation)
   * [Tests](#tests)
   * [Authors](#authors)
   * [Questions](#questions)
 
-<br>
-  
-## License:
-<br>
-      -  MIT License - 
-
-<br>
 <br>
 
 
