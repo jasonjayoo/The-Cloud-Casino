@@ -1,13 +1,18 @@
 <div class="boardN">
   <div id="screenContN">
+    <!--canvas, size set here is for purpose of canvas logic, 
+  css size changes only rescale the image,
+  as far as canvas logic is concerned the image remains 500 by 500 pixels-->
     <canvas id="viewScreenN" class="rN" width="500" height="500"></canvas>
   </div>
+  <!--buttons and displays-->
   <div class="controlsN">
 
     <div class="infoN2 centN">
+      <!-- back to lobby button-->
       <button type="button" id="backToLobbyN" class="DbetN flat">To Lobby</button>
     </div>
-
+    <!--available chips display-->
     <div class="infoN2 centN">
       <div class="flat">Available chips:</div>
       <div id="chipsN" class="flat"></div><br />
@@ -15,38 +20,28 @@
 
     <div class="infoN2">
       <div class="centN">Place your $5 bet.</div>
-      <!--bet buttons, need to arrange this into a convenient pattern, maybe 2 rows, or separate numbers and even/odd-->
+      <!--bet buttons, selection triggers the dice roll-->
       <div id="betButtonsN" style="visibility:visible">
-        <button
-          id="b1N"
-          type="button"
-          class="DbetN"
-          value="1"
-        >1</button><!--change to 123456-->
+        <button id="b1N" type="button" class="DbetN" value="1">1</button>
         <button id="b2N" type="button" class="DbetN" value="2">2</button>
         <button id="b3N" type="button" class="DbetN" value="3">3</button>
         <button id="b4N" type="button" class="DbetN" value="4">4</button>
         <button id="b5N" type="button" class="DbetN" value="5">5</button>
         <button id="b6N" type="button" class="DbetN" value="6">6</button>
-        <button
-          id="bEvenN"
-          type="button"
-          class="DbetN"
-          value="even"
-        >Even</button>
+        <button id="bEvenN" type="button" class="DbetN" value="even">Even</button>
         <button id="bOddN" type="button" class="DbetN" value="odd">Odd</button>
       </div>
     </div>
 
     <div class="infoN2 centN">
+      <!--chosen bet display-->
       <div class="flat">Your bet:</div>
       <div id="yourBetN" class="flat"></div>
     </div>
 
   </div>
 
-  <div id="roomMinimum" value="5"></div>
 
 </div>
 
-<script src="/JS/dice10.js"></script>
+<script src="/JS/dice5.js"></script>

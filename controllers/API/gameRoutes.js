@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { user } = require("../../models");
 
-router.get("/money", async (req, res) => {
+router.get("/money", async (req, res) => {//check current funds
   try {
     if (!req.session.logged_in) {
       res.status(401).json("User is not logged in");
