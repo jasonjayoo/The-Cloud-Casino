@@ -5,9 +5,7 @@
 
 <br>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  
-<br>
+
 
 ## Description:
 
@@ -49,7 +47,7 @@ I like gambling but I dont want to risk my hard earned money. So, I want a progr
 
 ## Table of contents:
 
-  * [License](#license)
+ 
   * [Heroku](#heroku)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -60,12 +58,6 @@ I like gambling but I dont want to risk my hard earned money. So, I want a progr
 
 <br>
   
-## License:
-<br>
-      -  MIT License - Copyright (c) 2022 Jason Yoo
-
-<br>
-<br>
 
 ## Heroku:
 
