@@ -21,7 +21,7 @@ An online casino (no real money, just for fun). Still a lot we plan to add, but 
 
 ## Table of contents:
 
-  * [Description and Link](#description)
+  * [Description and Link](#description and link)
   * [License](#license)
   * [Installation](#installation)
   * [Tests](#tests)
