@@ -1,6 +1,6 @@
 # The Cloud Casino
-[Screenshot4](images/casino-lobby-screenshot.png)  "Casino Lobby: User will be directed to pick either 5, 10, 100, or 500 dice."
-<img src="images/casino-lobby-screenshot.png">
+
+
 
 
 <br>
@@ -15,7 +15,7 @@ An online casino (no real money, just for fun). Still a lot we plan to add, but 
 <a href='https://glacial-reef-71102.herokuapp.com/'>Link to deployed version</a>
 
 <br>
-
+<img src="images/casino-lobby-screenshot.png">
 
 
 
