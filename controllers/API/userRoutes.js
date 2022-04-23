@@ -6,7 +6,7 @@ require("dotenv").config();
 
 ///these urls are for the emailed link
 //const ourSite = "http://localhost:3001/"
-const ourSite = "https://glacial-reef-71102.herokuapp.com/"; 
+const ourSite = "https://cloud247casino.herokuapp.com/"; 
 
 //verify that name is unique
 router.get("/check/:id", async (req, res) => {
