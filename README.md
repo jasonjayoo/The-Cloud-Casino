@@ -3,6 +3,7 @@
 
 
 
+
 <br>
 
 
@@ -18,13 +19,14 @@ An online casino (no real money, just for fun). Still a lot we plan to add, but 
 
 ## Table of contents:
 
-  
+
   * [Installation](#installation)
   * [Tests](#tests)
   * [Authors](#authors)
   * [Questions](#questions)
 
 <br>
+
 
 
 ## Installation:
