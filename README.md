@@ -1,4 +1,4 @@
-# The Cloud Casino
+# Cloud 247 Casino
 
 
 
@@ -9,7 +9,7 @@
 ## Description and Link:
 
 An online casino (no real money, just for fun). Still a lot we plan to add, but worth a visit. Please try it out here:<br><br>
-<a href='https://glacial-reef-71102.herokuapp.com/'>Link to deployed version</a>
+<a href='https://cloud247casino.herokuapp.com/'>Link to deployed version</a>
 
 <br>
 <img src="images/casino-lobby-screenshot.png">
